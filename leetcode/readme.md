@@ -4,3 +4,4 @@ Python3
 |:----:|:----:|:----:|:----:|:----:|:----:|
 |7|Reverse Integer|Easy|Python3|0.2267|O(n)|
 |189|Rotate Array|Easy|Python3|0.1094|O(n)|
+|2|Add Two Numbers(*)|Medium|Python3/c|0.0088/1|O(max(n, m))|
