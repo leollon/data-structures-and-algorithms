@@ -8,3 +8,4 @@ Python3
 |1|Two Sum|Easy|Py/C|0.1608/0.19|O(n^2)/O(n)|
 |83|Remove Duplicates from Sorted List|Easy|Py/C|0.8739/0.8179|O(n-1)|
 |771|Jewels and Stones|Easy|Py/C|0.4648/1|O(len(J))/O(len(J)xlen(S))|
+|26|Remove Duplicates from Sorted Array(*)|Easy|Py|0.8209|O(len(nums))|
