@@ -10,3 +10,4 @@ Python3
 |771|Jewels and Stones|Easy|Py/C|0.4648/1|O(len(J))/O(len(J)xlen(S))|
 |26|Remove Duplicates from Sorted Array(*)|Easy|Py|0.8209|O(len(nums))|
 |27|Remove Element|Easy|Py/C|0.1740/1|O(len(nums)))|
+|88|Merge Sorted Array|Easy|Py|0.7637|O(3)|
