@@ -11,3 +11,4 @@ Python3
 |26|Remove Duplicates from Sorted Array(*)|Easy|Py|0.8209|O(len(nums))|
 |27|Remove Element|Easy|Py/C|0.1740/1|O(len(nums)))|
 |88|Merge Sorted Array|Easy|Py|0.7637|O(3)|
+|442|Find All Duplicates in an Array|Medium|Py|0.349|O(n)|
