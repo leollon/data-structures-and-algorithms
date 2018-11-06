@@ -12,3 +12,4 @@ Python3
 |27|Remove Element|Easy|Py/C|0.1740/1|O(len(nums)))|
 |88|Merge Sorted Array|Easy|Py|0.7637|O(3)|
 |442|Find All Duplicates in an Array|Medium|Py|0.349|O(n)|
+|4|Median of Two Sorted Arrays|Hard|Py|0.3578|O(3)|
