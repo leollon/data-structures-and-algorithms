@@ -62,7 +62,7 @@ class Solution2:
         :type target: int
         :rtype: List[int]
         >>> l, t = [2, 7, 11, 15], 9
-        >>> s = Solution1()
+        >>> s = Solution2()
         >>> s.twoSum(l, t)
         [0, 1]
         >>> l, t = [2, 11, 16, 10, 8, 0, 7, 3], 9
@@ -101,7 +101,7 @@ class Solution3:
         :type target: int
         :rtype: List[int]
         >>> l, t = [2, 7, 11, 15], 9
-        >>> s = Solution1()
+        >>> s = Solution3()
         >>> s.twoSum(l, t)
         [0, 1]
         >>> l, t = [2, 11, 16, 10, 8, 0, 7, 3], 9
