@@ -15,3 +15,4 @@ Python3
 |4|Median of Two Sorted Arrays|Hard|Py|0.3578|O(3)|
 |868|Binary Gap|Easy|Py|0.9048|O(n)|
 |67|Add Binary|Easy|Py|0.3781|O(1)|
+|14|Longest Common Prefix|Easy|Py|0.9956|O(n)|
