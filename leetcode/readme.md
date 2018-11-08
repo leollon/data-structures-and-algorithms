@@ -14,3 +14,4 @@ Python3
 |442|Find All Duplicates in an Array|Medium|Py|0.349|O(n)|
 |4|Median of Two Sorted Arrays|Hard|Py|0.3578|O(3)|
 |868|Binary Gap|Easy|Py|0.9048|O(n)|
+|67|Add Binary|Easy|Py|0.3781|O(1)|
