@@ -16,3 +16,4 @@ Python3
 |12|868|Binary Gap|Easy|Py|0.9048|
 |13|67|Add Binary|Easy|Py|0.3781|
 |14|14|Longest Common Prefix|Easy|Py|0.9956|
+|15|905|Sort Array By Parity|Easy|Py|0.3232|
