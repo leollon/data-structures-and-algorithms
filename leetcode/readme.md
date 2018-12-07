@@ -19,4 +19,4 @@ Python3
 |15|905|Sort Array By Parity|Easy|Py3|0.3232|
 |16|21|Merge Two Sorted Lists(*)|Easy|Py3|0.7724|
 |17|35|Search Insert Position|Easy|Py3|0.9817|
-|18|74|Search a 2D Matrix|Medium|Py3|0.0877|
+|18|74|Search a 2D Matrix|Medium|Py3|0.1318|

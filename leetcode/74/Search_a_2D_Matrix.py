@@ -31,13 +31,13 @@ Output: false
 import doctest
 
 
-class Solution:
+class Solution1:
     def search_matrix(self, matrix, target):
         """
         :type matrix: List[List[int]]
         :type target: int
         :rtype: bool
-        >>> s = Solution()
+        >>> s = Solution1()
         >>> matrix = [
         ...     [1,   3,  5,  7],
         ...     [10, 11, 16, 20],
@@ -86,6 +86,61 @@ class Solution:
             else:
                 return True
         return False
+
+class Solution2:
+    def search_matrix(self, matrix, target):
+        """
+        :type matrix: List[List[int]]
+        :type target: int
+        :rtype: bool
+        >>> s = Solution2()
+        >>> matrix = [
+        ...     [1,   3,  5,  7],
+        ...     [10, 11, 16, 20],
+        ...     [23, 30, 34, 50]
+        ... ]
+        >>> target = 3
+        >>> s.search_matrix(matrix, target)
+        True
+        >>> target = 13
+        >>> s.search_matrix(matrix, target)
+        False
+        >>> matrix, target = [[0]], 2
+        >>> s.search_matrix(matrix, target)
+        False
+        >>> matrix, target = [[0]], 0
+        >>> s.search_matrix(matrix, target)
+        True
+        >>> matrix, target = [[1], [3]], 3
+        >>> s.search_matrix(matrix, target)
+        True
+        >>> matrix, target = [[1], [3]], 2
+        >>> s.search_matrix(matrix, target)
+        False
+        >>> matrix, target = [[]], 0
+        >>> s.search_matrix(matrix, target)
+        False
+        >>> matrix, target = [], 0
+        >>> s.search_matrix(matrix, target)
+        False
+        """
+        if not matrix:
+            return False
+        else:
+            return self.binary_search(matrix, target)
+
+
+    def binary_search(self, matrix, target):
+        row, col = 0, len(matrix[0]) - 1
+        ret_value = False
+        while row < len(matrix) and col >=0 and not ret_value:
+            if matrix[row][col] < target:
+                row += 1
+            elif matrix[row][col] > target:
+                col -= 1
+            else:
+                ret_value = True
+        return ret_value
 
 
 if __name__ == "__main__":
