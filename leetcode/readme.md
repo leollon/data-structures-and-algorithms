@@ -18,8 +18,9 @@ Python3
 |14|14|Longest Common Prefix|Easy|Py3|0.9956|
 |15|905|Sort Array By Parity|Easy|Py3|0.3232|
 |16|21|Merge Two Sorted Lists(*)|Easy|Py3|0.7724|
-|17|35|Search Insert Position|Easy|Py3|0.9817|
-|18|74|Search a 2D Matrix|Medium|Py3|0.1318|
-|19|81|Search in Rotated Array II|Medium|Py3|0.0412|
-|20|153|Find Minimum in Rotated Sorted Array|Medium|Py3|0.6644|
-|21|58|Lenght of Last word|Easy|Py3|0.9145|
+|17|704|Binary Search|Easy|Py3|0.1760|
+|18|35|Search Insert Position|Easy|Py3|0.9817|
+|19|74|Search a 2D Matrix|Medium|Py3|0.1318|
+|20|81|Search in Rotated Array II|Medium|Py3|0.0412|
+|21|153|Find Minimum in Rotated Sorted Array|Medium|Py3|0.6644|
+|22|58|Lenght of Last word|Easy|Py3|0.9145|
