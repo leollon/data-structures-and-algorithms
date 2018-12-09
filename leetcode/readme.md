@@ -21,3 +21,4 @@ Python3
 |17|35|Search Insert Position|Easy|Py3|0.9817|
 |18|74|Search a 2D Matrix|Medium|Py3|0.1318|
 |19|81|Search in Rotated Array II|Medium|Py3|0.0412|
+|20|153|Find Minimum in Rotated Sorted Array|Medium|Py3|0.6644|
