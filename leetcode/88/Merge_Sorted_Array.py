@@ -28,27 +28,29 @@ class Solution:
         :type nums2: List[int]
         :type n: int
         :rtype: void Do not return anything, modify nums1 in-place instead.
-        >>> s = Solution()
-        >>> nums1, m = [1, 2, 3, 0, 0, 0], 3
-        >>> nums2, n = [2, 5, 6], 3
-        >>> s.merge(nums1, m, nums2, n)
-        >>> nums1
-        [1, 2, 2, 3, 5, 6]
-        >>> nums1, n = [2, 5, 6, 0, 0, 0], 3
-        >>> nums2, m = [1, 2, 3], 3
-        >>> s.merge(nums1, m, nums2, n)
-        >>> nums1
-        [1, 2, 2, 3, 5, 6]
-        >>> nums1, m= [2, 3, 3, 4, 0], 1
-        >>> nums2, n = [1], 1
-        >>> s.merge(nums1, m, nums2, n)
-        >>> nums1
-        [1, 2, 3, 3, 4]
-        >>> nums1, m= [2, 3, 3, 4, 0], 1
-        >>> nums2, n = [5], 1
-        >>> s.merge(nums1, m, nums2, n)
-        >>> nums1
-        [2, 3, 3, 4, 5]
+
+        Examples:
+            >>> s = Solution()
+            >>> nums1, m = [1, 2, 3, 0, 0, 0], 3
+            >>> nums2, n = [2, 5, 6], 3
+            >>> s.merge(nums1, m, nums2, n)
+            >>> nums1
+            [1, 2, 2, 3, 5, 6]
+            >>> nums1, n = [2, 5, 6, 0, 0, 0], 3
+            >>> nums2, m = [1, 2, 3], 3
+            >>> s.merge(nums1, m, nums2, n)
+            >>> nums1
+            [1, 2, 2, 3, 5, 6]
+            >>> nums1, m= [2, 3, 3, 4, 0], 1
+            >>> nums2, n = [1], 1
+            >>> s.merge(nums1, m, nums2, n)
+            >>> nums1
+            [1, 2, 3, 3, 4]
+            >>> nums1, m= [2, 3, 3, 4, 0], 1
+            >>> nums2, n = [5], 1
+            >>> s.merge(nums1, m, nums2, n)
+            >>> nums1
+            [2, 3, 3, 4, 5]
         """
         if not nums2:
             return

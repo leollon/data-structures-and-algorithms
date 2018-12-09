@@ -30,13 +30,15 @@ class Solution:
         :type J: str
         :type S: str
         :rtype: int
-        >>> s = Solution()
-        >>> J, S = 'aA', 'aAAbbbbb'
-        >>> s.numJewelsInStones(J, S)
-        3
-        >>> J, S = 'z', 'ZZ'
-        >>> s.numJewelsInStones(J, S)
-        0
+
+        Examples:
+            >>> s = Solution()
+            >>> J, S = 'aA', 'aAAbbbbb'
+            >>> s.numJewelsInStones(J, S)
+            3
+            >>> J, S = 'z', 'ZZ'
+            >>> s.numJewelsInStones(J, S)
+            0
         """
         count = 0
         for ch in J:

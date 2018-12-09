@@ -21,22 +21,24 @@ class Solution1:
         :type nums: List[int]
         :type target: int
         :rtype: List[int]
-        >>> l, t = [2, 7, 11, 15], 9
-        >>> s = Solution1()
-        >>> s.twoSum(l, t)
-        [0, 1]
-        >>> l, t = [2, 11, 16, 10, 8, 0, 7, 3], 9
-        >>> s.twoSum(l, t)
-        [0, 6]
-        >>> l, t = [3, 3], 6
-        >>> s.twoSum(l, t)
-        [0, 1]
-        >>> l, t = [3, 0, 3], 6
-        >>> s.twoSum(l, t)
-        [0, 2]
-        >>> l, t = [3,2,4], 6
-        >>> s.twoSum(l, t)
-        [1, 2]
+
+        Examples:
+            >>> l, t = [2, 7, 11, 15], 9
+            >>> s = Solution1()
+            >>> s.twoSum(l, t)
+            [0, 1]
+            >>> l, t = [2, 11, 16, 10, 8, 0, 7, 3], 9
+            >>> s.twoSum(l, t)
+            [0, 6]
+            >>> l, t = [3, 3], 6
+            >>> s.twoSum(l, t)
+            [0, 1]
+            >>> l, t = [3, 0, 3], 6
+            >>> s.twoSum(l, t)
+            [0, 2]
+            >>> l, t = [3,2,4], 6
+            >>> s.twoSum(l, t)
+            [1, 2]
         """
         idx_list = []
         d = dict(zip(range(len(nums)), nums))

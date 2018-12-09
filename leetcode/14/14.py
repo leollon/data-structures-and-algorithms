@@ -26,22 +26,24 @@ class Solution:
         """
         :type strs: List[str]
         :rtype: str
-        >>> s = Solution()
-        >>> strs = ["dog", "racecar", "car"]
-        >>> s.longestCommonPrefix(strs)
-        ''
-        >>> strs = ["flower", "flow", "flight"]
-        >>> s.longestCommonPrefix(strs)
-        'fl'
-        >>> strs = ["flower", "flow"]
-        >>> s.longestCommonPrefix(strs)
-        'flow'
-        >>> strs = ["flower"]
-        >>> s.longestCommonPrefix(strs)
-        'flower'
-        >>> strs = []
-        >>> s.longestCommonPrefix(strs)
-        ''
+
+        Examples:
+            >>> s = Solution()
+            >>> strs = ["dog", "racecar", "car"]
+            >>> s.longestCommonPrefix(strs)
+            ''
+            >>> strs = ["flower", "flow", "flight"]
+            >>> s.longestCommonPrefix(strs)
+            'fl'
+            >>> strs = ["flower", "flow"]
+            >>> s.longestCommonPrefix(strs)
+            'flow'
+            >>> strs = ["flower"]
+            >>> s.longestCommonPrefix(strs)
+            'flower'
+            >>> strs = []
+            >>> s.longestCommonPrefix(strs)
+            ''
         """
         strs.sort(key=len) # 按长度排序，最短的排前面，用最短的字符串决定最长的字符串前缀
         if not len(strs): return ''

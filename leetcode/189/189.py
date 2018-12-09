@@ -33,17 +33,19 @@ class Solution:
         :type nums: List[int]
         :type k: int
         :rtype: void Do not return anything, modify nums in-place instead.
-        >>> s = Solution()
-        >>> nums, k = [1,2,3,4,5,6,7], 3
-        >>> s.rotate(nums, k)
-        >>>
-        >>> nums
-        [5, 6, 7, 1, 2, 3, 4]
-        >>> nums, k = [-1,-100,3,99], 2
-        >>> s.rotate(nums, k)
-        >>>
-        >>> nums
-        [3, 99, -1, -100]
+
+        Examples:
+            >>> s = Solution()
+            >>> nums, k = [1,2,3,4,5,6,7], 3
+            >>> s.rotate(nums, k)
+            >>>
+            >>> nums
+            [5, 6, 7, 1, 2, 3, 4]
+            >>> nums, k = [-1,-100,3,99], 2
+            >>> s.rotate(nums, k)
+            >>>
+            >>> nums
+            [3, 99, -1, -100]
         """
         # O(n)
         while k:

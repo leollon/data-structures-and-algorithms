@@ -24,28 +24,30 @@ class Solution:
         """
         :type arr: List[int]
         :rtype: List[int]
-        >>> s = Solution()
-        >>> arr = [3, 1, 2, 4]
-        >>> s.sortArrayByParity(arr)
-        [4, 2, 3, 1]
-        >>> arr = [3]
-        >>> s.sortArrayByParity(arr)
-        [3]
-        >>> arr = [4, 3, 2, 5, 9, 10]
-        >>> s.sortArrayByParity(arr)
-        [10, 2, 4, 3, 5, 9]
-        >>> arr = []
-        >>> s.sortArrayByParity(arr)
-        []
-        >>> arr = [3, 4]
-        >>> s.sortArrayByParity(arr)
-        [4, 3]
-        >>> arr = [3, 2, 4, 1]
-        >>> s.sortArrayByParity(arr)
-        [4, 2, 3, 1]
-        >>> arr = [2, 4, 6, 8]
-        >>> s.sortArrayByParity(arr)
-        [8, 6, 4, 2]
+
+        Examples:
+            >>> s = Solution()
+            >>> arr = [3, 1, 2, 4]
+            >>> s.sortArrayByParity(arr)
+            [4, 2, 3, 1]
+            >>> arr = [3]
+            >>> s.sortArrayByParity(arr)
+            [3]
+            >>> arr = [4, 3, 2, 5, 9, 10]
+            >>> s.sortArrayByParity(arr)
+            [10, 2, 4, 3, 5, 9]
+            >>> arr = []
+            >>> s.sortArrayByParity(arr)
+            []
+            >>> arr = [3, 4]
+            >>> s.sortArrayByParity(arr)
+            [4, 3]
+            >>> arr = [3, 2, 4, 1]
+            >>> s.sortArrayByParity(arr)
+            [4, 2, 3, 1]
+            >>> arr = [2, 4, 6, 8]
+            >>> s.sortArrayByParity(arr)
+            [8, 6, 4, 2]
         """
         length = len(arr)
         index = 0

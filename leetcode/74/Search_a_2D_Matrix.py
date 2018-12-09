@@ -93,36 +93,38 @@ class Solution2:
         :type matrix: List[List[int]]
         :type target: int
         :rtype: bool
-        >>> s = Solution2()
-        >>> matrix = [
-        ...     [1,   3,  5,  7],
-        ...     [10, 11, 16, 20],
-        ...     [23, 30, 34, 50]
-        ... ]
-        >>> target = 3
-        >>> s.search_matrix(matrix, target)
-        True
-        >>> target = 13
-        >>> s.search_matrix(matrix, target)
-        False
-        >>> matrix, target = [[0]], 2
-        >>> s.search_matrix(matrix, target)
-        False
-        >>> matrix, target = [[0]], 0
-        >>> s.search_matrix(matrix, target)
-        True
-        >>> matrix, target = [[1], [3]], 3
-        >>> s.search_matrix(matrix, target)
-        True
-        >>> matrix, target = [[1], [3]], 2
-        >>> s.search_matrix(matrix, target)
-        False
-        >>> matrix, target = [[]], 0
-        >>> s.search_matrix(matrix, target)
-        False
-        >>> matrix, target = [], 0
-        >>> s.search_matrix(matrix, target)
-        False
+
+        Examples:
+            >>> s = Solution2()
+            >>> matrix = [
+            ...     [1,   3,  5,  7],
+            ...     [10, 11, 16, 20],
+            ...     [23, 30, 34, 50]
+            ... ]
+            >>> target = 3
+            >>> s.search_matrix(matrix, target)
+            True
+            >>> target = 13
+            >>> s.search_matrix(matrix, target)
+            False
+            >>> matrix, target = [[0]], 2
+            >>> s.search_matrix(matrix, target)
+            False
+            >>> matrix, target = [[0]], 0
+            >>> s.search_matrix(matrix, target)
+            True
+            >>> matrix, target = [[1], [3]], 3
+            >>> s.search_matrix(matrix, target)
+            True
+            >>> matrix, target = [[1], [3]], 2
+            >>> s.search_matrix(matrix, target)
+            False
+            >>> matrix, target = [[]], 0
+            >>> s.search_matrix(matrix, target)
+            False
+            >>> matrix, target = [], 0
+            >>> s.search_matrix(matrix, target)
+            False
         """
         if not matrix:
             return False

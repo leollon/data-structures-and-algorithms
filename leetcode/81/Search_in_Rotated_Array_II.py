@@ -29,13 +29,15 @@ class Solution:
         :type nums: List[int]
         :type target: int
         :rtype: bool
-        >>> s = Solution()
-        >>> nums, target = [2,5,6,0,0,1,2], 0
-        >>> s.search(nums, target)
-        True
-        >>> nums, target = [2,5,6,0,0,1,2], 3
-        >>> s.search(nums, target)
-        False
+
+        Examples:
+            >>> s = Solution()
+            >>> nums, target = [2,5,6,0,0,1,2], 0
+            >>> s.search(nums, target)
+            True
+            >>> nums, target = [2,5,6,0,0,1,2], 3
+            >>> s.search(nums, target)
+            False
         """
         array = sorted(nums)
         low, height = 0, len(array) - 1

@@ -22,28 +22,30 @@ class Solution:
         :type a: str
         :type b: str
         :rtype: str
-        >>> s = Solution()
-        >>> a, b = "100", "11"
-        >>> s.addBinary(a, b)
-        '111'
-        >>> a, b = "100", "1"
-        >>> s.addBinary(a, b)
-        '101'
-        >>> a, b = "111", "11"
-        >>> s.addBinary(a, b)
-        '1010'
-        >>> a, b = "110", "101"
-        >>> s.addBinary(a, b)
-        '1011'
-        >>> a, b = "111", "111"
-        >>> s.addBinary(a, b)
-        '1110'
-        >>> a, b = bin(15**2)[2:], bin(10**9)[2:]
-        >>> s.addBinary(a, b)
-        '111011100110101100101011100001'
-        >>> a, b = bin(15**2)[2:], bin(10**9)[2:]
-        >>> s.addBinary(a, b)
-        '111011100110101100101011100001'
+
+        Examples:
+            >>> s = Solution()
+            >>> a, b = "100", "11"
+            >>> s.addBinary(a, b)
+            '111'
+            >>> a, b = "100", "1"
+            >>> s.addBinary(a, b)
+            '101'
+            >>> a, b = "111", "11"
+            >>> s.addBinary(a, b)
+            '1010'
+            >>> a, b = "110", "101"
+            >>> s.addBinary(a, b)
+            '1011'
+            >>> a, b = "111", "111"
+            >>> s.addBinary(a, b)
+            '1110'
+            >>> a, b = bin(15**2)[2:], bin(10**9)[2:]
+            >>> s.addBinary(a, b)
+            '111011100110101100101011100001'
+            >>> a, b = bin(15**2)[2:], bin(10**9)[2:]
+            >>> s.addBinary(a, b)
+            '111011100110101100101011100001'
         """
         return bin(int(a, base=2) + int(b, base=2))[2:]
 

@@ -53,34 +53,36 @@ class Solution:
         """
         :type N: int
         :rtype: int
-        >>> s = Solution()
-        >>> n = 22
-        >>> s.binaryGap(n)
-        2
-        >>> n = 5
-        >>> s.binaryGap(n)
-        2
-        >>> n = 3
-        >>> s.binaryGap(n)
-        1
-        >>> n = 33
-        >>> s.binaryGap(n)
-        5
-        >>> n = 56
-        >>> s.binaryGap(n)
-        1
-        >>> n = 32
-        >>> s.binaryGap(n)
-        0
-        >>> n = 1
-        >>> s.binaryGap(n)
-        0
-        >>> n = 13
-        >>> s.binaryGap(n)
-        2
-        >>> n = 1
-        >>> s.binaryGap(n)
-        0
+
+        Examples:
+            >>> s = Solution()
+            >>> n = 22
+            >>> s.binaryGap(n)
+            2
+            >>> n = 5
+            >>> s.binaryGap(n)
+            2
+            >>> n = 3
+            >>> s.binaryGap(n)
+            1
+            >>> n = 33
+            >>> s.binaryGap(n)
+            5
+            >>> n = 56
+            >>> s.binaryGap(n)
+            1
+            >>> n = 32
+            >>> s.binaryGap(n)
+            0
+            >>> n = 1
+            >>> s.binaryGap(n)
+            0
+            >>> n = 13
+            >>> s.binaryGap(n)
+            2
+            >>> n = 1
+            >>> s.binaryGap(n)
+            0
         """
         binary = bin(n)[2:]
         if binary.count('1') <= 1: return 0

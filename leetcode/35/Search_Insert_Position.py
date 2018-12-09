@@ -30,28 +30,30 @@ class Solution:
         :type nums: List[int]
         :type target: int
         :rtype: int
-        >>> s = Solution()
-        >>> nums, target = [1, 2, 3, 4, 5], 8
-        >>> s.search_insert(nums, target)
-        5
-        >>> target = 0
-        >>> s.search_insert(nums, target)
-        0
-        >>> target = 3
-        >>> s.search_insert(nums, target)
-        2
-        >>> nums, target = [1], 1
-        >>> s.search_insert(nums, target)
-        0
-        >>> nums, target = [], 1
-        >>> s.search_insert(nums, target)
-        0
-        >>> nums, target = [2], 1
-        >>> s.search_insert(nums, target)
-        0
-        >>> nums, target = [2], 3
-        >>> s.search_insert(nums, target)
-        1
+
+        Examples:
+            >>> s = Solution()
+            >>> nums, target = [1, 2, 3, 4, 5], 8
+            >>> s.search_insert(nums, target)
+            5
+            >>> target = 0
+            >>> s.search_insert(nums, target)
+            0
+            >>> target = 3
+            >>> s.search_insert(nums, target)
+            2
+            >>> nums, target = [1], 1
+            >>> s.search_insert(nums, target)
+            0
+            >>> nums, target = [], 1
+            >>> s.search_insert(nums, target)
+            0
+            >>> nums, target = [2], 1
+            >>> s.search_insert(nums, target)
+            0
+            >>> nums, target = [2], 3
+            >>> s.search_insert(nums, target)
+            1
         """
         nums.sort()
         return self.binary_search(nums, target)

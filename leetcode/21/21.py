@@ -23,32 +23,34 @@ class Solution:
         :type l1: ListNode
         :type l2: ListNode
         :rtype: ListNode
-        >>> s = Solution()
-        >>> l1 = ListNode(1)
-        >>> l1.next = ListNode(2)
-        >>> l1.next.next = ListNode(3)
 
-        >>> l2 = ListNode(1)
-        >>> l2.next = ListNode(4)
-        >>> l2.next.next = ListNode(5)
-        >>> l2.next.next.next = ListNode(6)
+        Examples:
+            >>> s = Solution()
+            >>> l1 = ListNode(1)
+            >>> l1.next = ListNode(2)
+            >>> l1.next.next = ListNode(3)
 
-        >>> l = s.mergeTwoLists(l1, l2)
-        >>> while l:
-        ...     print(l.val, end='')
-        ...     l = l.next
-        ...     if not l:
-        ...         break
-        ...
-        1123456
-        >>> l1 = ListNode(1)
-        >>> l2 = ListNode(1)
-        >>> l = s.mergeTwoLists(l1, l2)
-        >>> while l:
-        ...    print(l.val, end='')
-        ...    l = l.next
-        ...
-        11
+            >>> l2 = ListNode(1)
+            >>> l2.next = ListNode(4)
+            >>> l2.next.next = ListNode(5)
+            >>> l2.next.next.next = ListNode(6)
+
+            >>> l = s.mergeTwoLists(l1, l2)
+            >>> while l:
+            ...     print(l.val, end='')
+            ...     l = l.next
+            ...     if not l:
+            ...         break
+            ...
+            1123456
+            >>> l1 = ListNode(1)
+            >>> l2 = ListNode(1)
+            >>> l = s.mergeTwoLists(l1, l2)
+            >>> while l:
+            ...    print(l.val, end='')
+            ...    l = l.next
+            ...
+            11
         """
         if not l1: return l2
         if not l2: return l1

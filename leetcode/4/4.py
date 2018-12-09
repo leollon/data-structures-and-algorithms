@@ -26,22 +26,24 @@ class Solution:
     计算有限个数的数据的中位数的方法是：把所有的同类数据按照大小的顺序排列。
     如果数据的个数是奇数，则中间那个数据就是这群数据的中位数；
     如果数据的个数是偶数，则中间那2个数据的算术平均值就是这群数据的中位数。
-    >>> s = Solution()
-    >>> nums1, nums2 = [1, 3], [2, 4]
-    >>> s.findMedianSortedArrays(nums1, nums2)
-    2.5
-    >>> nums1, nums2 = [1, 3], [2]
-    >>> s.findMedianSortedArrays(nums1, nums2)
-    2.0
-    >>> nums1, nums2 = [1, 3, 5, 7, 9, 11], [2, 4, 6, 8, 10]
-    >>> s.findMedianSortedArrays(nums1, nums2)
-    5.5
     """
     def findMedianSortedArrays(self, nums1, nums2):
         """
         :type nums1: List[int]
         :type nums2: List[int]
         :rtype: float
+
+        Examples:
+            >>> s = Solution()
+            >>> nums1, nums2 = [1, 3], [2, 4]
+            >>> s.findMedianSortedArrays(nums1, nums2)
+            2.5
+            >>> nums1, nums2 = [1, 3], [2]
+            >>> s.findMedianSortedArrays(nums1, nums2)
+            2.0
+            >>> nums1, nums2 = [1, 3, 5, 7, 9, 11], [2, 4, 6, 8, 10]
+            >>> s.findMedianSortedArrays(nums1, nums2)
+            5.5
         """
         nums = nums1 + nums2
         nums.sort()

@@ -23,38 +23,40 @@ class Solution:
     def deleteDuplicates(self, head):
         """
         :type head: ListNode
-        :rtype: ListNode
-        >>> def my_print(head):
-        ...     while True:
-        ...         print(head.val, end='')
-        ...         head = head.next
-        ...         if not head:
-        ...             break
-        ...
-        >>> s = Solution()
-        >>> l = ListNode(1)
-        >>> l.next = ListNode(2)
-        >>> l.next.next = ListNode(2)
-        >>> l.next.next.next = ListNode(3)
-        >>> l.next.next.next.next = ListNode(3)
-        >>> l.next.next.next.next.next = ListNode(4)
-        >>> head = s.deleteDuplicates(l)
-        >>> my_print(head)
-        1234
-        >>> l = ListNode(1)
-        >>> l.next = ListNode(1)
-        >>> l.next.next = ListNode(2)
-        >>> head = s.deleteDuplicates(l)
-        >>> my_print(head)
-        12
-        >>> l = ListNode(5)
-        >>> l.next = ListNode(4)
-        >>> l.next.next = ListNode(2)
-        >>> l.next.next.next = ListNode(2)
-        >>> l.next.next.next.next = ListNode(2)
-        >>> head = s.deleteDuplicates(l)
-        >>> my_print(head)
-        542
+        :rtype: 
+
+        Examples:
+            >>> def my_print(head):
+            ...     while True:
+            ...         print(head.val, end='')
+            ...         head = head.next
+            ...         if not head:
+            ...             break
+            ...
+            >>> s = Solution()
+            >>> l = ListNode(1)
+            >>> l.next = ListNode(2)
+            >>> l.next.next = ListNode(2)
+            >>> l.next.next.next = ListNode(3)
+            >>> l.next.next.next.next = ListNode(3)
+            >>> l.next.next.next.next.next = ListNode(4)
+            >>> head = s.deleteDuplicates(l)
+            >>> my_print(head)
+            1234
+            >>> l = ListNode(1)
+            >>> l.next = ListNode(1)
+            >>> l.next.next = ListNode(2)
+            >>> head = s.deleteDuplicates(l)
+            >>> my_print(head)
+            12
+            >>> l = ListNode(5)
+            >>> l.next = ListNode(4)
+            >>> l.next.next = ListNode(2)
+            >>> l.next.next.next = ListNode(2)
+            >>> l.next.next.next.next = ListNode(2)
+            >>> head = s.deleteDuplicates(l)
+            >>> my_print(head)
+            542
         """
         if not head:
             return head

@@ -47,17 +47,19 @@ class Solution:
         """
         :type nums: List[int]
         :rtype: int
-        >>> s = Solution()
-        >>> nums = [1,1,2]
-        >>> s.removeDuplicates(nums)
-        2
-        >>> nums
-        [1, 2]
-        >>> nums = [0,0,1,1,1,2,2,3,3,4]
-        >>> s.removeDuplicates(nums)
-        5
-        >>> nums
-        [0, 1, 2, 3, 4]
+
+        Examples:
+            >>> s = Solution()
+            >>> nums = [1,1,2]
+            >>> s.removeDuplicates(nums)
+            2
+            >>> nums
+            [1, 2]
+            >>> nums = [0,0,1,1,1,2,2,3,3,4]
+            >>> s.removeDuplicates(nums)
+            5
+            >>> nums
+            [0, 1, 2, 3, 4]
         """
         # 这里有一种双指针的意思在里面，此指针非比C语言中的指针范畴，这里的指针亦可称为箭头。
         if (not len(nums)):

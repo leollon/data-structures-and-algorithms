@@ -27,16 +27,19 @@ class Solution:
         """
         :type x: int
         :rtype: int
-        >>> s = Solution()
-        >>> x = 123
-        >>> s.reverse(x)
-        321
-        >>> x = -123
-        >>> s.reverse(x)
-        -321
-        >>> x = 120
-        >>> s.reverse(x)
-        21
+
+        Examples:
+
+            >>> s = Solution()
+            >>> x = 123
+            >>> s.reverse(x)
+            321
+            >>> x = -123
+            >>> s.reverse(x)
+            -321
+            >>> x = 120
+            >>> s.reverse(x)
+            21
         """
         ret_value = self.my_reverse(x)
         if not (-(2**31) <= ret_value <= (2**31-1)): return 0

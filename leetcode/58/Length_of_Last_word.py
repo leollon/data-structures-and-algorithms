@@ -23,7 +23,6 @@ class Solution1:
         :rtype: int
 
         Examples:
-
             >>> s = Solution1()
             >>> string = "hello world"
             >>> s.lengthOfLastWord(string)

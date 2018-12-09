@@ -53,19 +53,21 @@ class Solution:
         :type nums: List[int]
         :type val: int
         :rtype: int
-        >>> s = Solution()
-        >>> nums, val = [3, 2, 2, 3], 3
-        >>> s.removeElement(nums, val)
-        2
-        >>> nums, val = [0, 1, 2, 2, 3, 0, 4, 2], 2
-        >>> s.removeElement(nums, val)
-        5
-        >>> nums, val = [0, 1, 1, 2, 2, 3, 3], 3
-        >>> s.removeElement(nums, val)
-        5
-        >>> nums, val = [2, 2, 2, 2], 2
-        >>> s.removeElement(nums, val)
-        0
+
+        Examples:
+            >>> s = Solution()
+            >>> nums, val = [3, 2, 2, 3], 3
+            >>> s.removeElement(nums, val)
+            2
+            >>> nums, val = [0, 1, 2, 2, 3, 0, 4, 2], 2
+            >>> s.removeElement(nums, val)
+            5
+            >>> nums, val = [0, 1, 1, 2, 2, 3, 3], 3
+            >>> s.removeElement(nums, val)
+            5
+            >>> nums, val = [2, 2, 2, 2], 2
+            >>> s.removeElement(nums, val)
+            0
         """
         left = 0
         right = len(nums) - 1
