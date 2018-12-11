@@ -25,3 +25,4 @@ Python3
 |21|153|Find Minimum in Rotated Sorted Array|Medium|Py3|0.6644|
 |22|58|Lenght of Last word|Easy|Py3|0.9145|
 |23|461|Hamming Distance|Easy|C|1|
+|24|69|Sqrt(x)|Easy|Py3|0.6799|
