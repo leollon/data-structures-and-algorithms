@@ -26,3 +26,4 @@ Python3
 |22|58|Lenght of Last word|Easy|Py3|0.9145|
 |23|461|Hamming Distance|Easy|C|1|
 |24|69|Sqrt(x)|Easy|Py3|0.6799|
+|25|125|Valid Palindrome|Easy|Py3|0.6191|
