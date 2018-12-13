@@ -27,3 +27,4 @@ Python3
 |23|461|Hamming Distance|Easy|C|1|
 |24|69|Sqrt(x)|Easy|Py3|0.6799|
 |25|125|Valid Palindrome|Easy|Py3|0.6191|
+|26|59|Spiral Matrix II|Medium|Py3|0.5028|
