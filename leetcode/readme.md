@@ -28,3 +28,4 @@ Python3
 |24|69|Sqrt(x)|Easy|Py3|0.6799|
 |25|125|Valid Palindrome|Easy|Py3|0.6191|
 |26|59|Spiral Matrix II|Medium|Py3|0.5028|
+|27|54|Spiral Matrix|Medium|Py3|0.1543|
