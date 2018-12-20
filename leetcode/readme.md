@@ -30,4 +30,5 @@ Python3
 |26|59|Spiral Matrix II|Medium|Py3|0.5028|
 |27|54|Spiral Matrix|Medium|Py3|0.1543|
 |28|11|Container With Most Water|Medium|Py3|0.8787|
-|29|Valid Parentheses|Valid Parentheses|Easy|Py3|0.9854|
+|29|20|Valid Parentheses|Easy|Py3|0.9854|
+|30|Pow(x, n)|Medium|Py3|0.213|
