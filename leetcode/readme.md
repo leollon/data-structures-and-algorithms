@@ -32,3 +32,4 @@ Python3
 |28|11|Container With Most Water|Medium|Py3|0.8787|
 |29|20|Valid Parentheses|Easy|Py3|0.9854|
 |30|Pow(x, n)|Medium|Py3|0.213|
+|31|Third Maximum Number|Easy|Medium|Py3|0.2983|
