@@ -60,14 +60,22 @@ class Solution:
             >>> nums = [3]
             >>> s.thirdMax(nums)
             3
-        """
-        if not nums: return None
-        nums.sort()
-        nums = list(set(nums))
-        return max(nums) if len(nums) <= 2 else nums[nums.index(max(nums)) - 2]
+            """
+        results = [None, None, None]
+        for num in nums:
+            if num in results: continue
+            if not results[0] or num > results[0]:
+                results[0], results[1], results[2] = num, results[0], results[1]
+            elif not results[1] or num > results[1]:
+                results[1], results[2] = num, results[1]
+            elif not results[2] or num > results[2]:
+                results[2] = num
+        if results[-1] is None:
+            return min(results)
+        else:
+            return results[0]
 
 
 if __name__ == "__main__":
     import doctest
     doctest.testmod(verbose=True)
-
