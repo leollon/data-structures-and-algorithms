@@ -31,5 +31,6 @@ Python3
 |27|54|Spiral Matrix|Medium|Py3|0.1543|
 |28|11|Container With Most Water|Medium|Py3|0.8787|
 |29|20|Valid Parentheses|Easy|Py3|0.9854|
-|30|Pow(x, n)|Medium|Py3|0.213|
-|31|Third Maximum Number|Easy|Medium|Py3|0.2983|
+|30|50|Pow(x, n)|Medium|Py3|0.213|
+|31|414|Third Maximum Number|Easy|Py3|0.2983|
+|32|61|Rotate List|Medium|Py3|0.5380|
