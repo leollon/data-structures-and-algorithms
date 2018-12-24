@@ -35,3 +35,4 @@ Python3
 |31|414|Third Maximum Number|Easy|Py3|0.2983|
 |32|61|Rotate List|Medium|Py3|0.5380|
 |33|19|Remove Nth Node From End of List|Medium|Py3|0.1827|
+|34|3| Longest Substring Without Repeating Characters|Medium|Py3|0.4051|

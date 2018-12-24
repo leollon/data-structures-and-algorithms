@@ -1,4 +1,4 @@
-"""
+""" Longest Substring Without Repeating Characters
 Given a string, find the length of the longest substring without repeating
 characters.
 
@@ -21,8 +21,30 @@ Explanation: The answer is "wke", with the length of 3.
              and not a substring.
 """
 
-import doctest
 
+class SolutionTLE:
+    """TLE
+    """
+    def lengthOfLongestSubstring(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        beg, end = 0, 1
+        length = len(s)
+        if not s:
+            return 0
+        max_length = 1
+        while beg != length - 1:
+            substring = s[beg:end]
+            distance = end - beg
+            if len(set(substring)) == distance and distance > max_length:
+                    max_length = distance
+            if end == length:
+                beg += 1
+                end = beg
+            end += 1
+        return max_length
 
 class Solution:
     def lengthOfLongestSubstring(self, s):
@@ -54,48 +76,20 @@ class Solution:
         >>> string = "ohomm"
         >>> s.lengthOfLongestSubstring(string)
         3
-        >>> string = "enuyazszxldyujzvucidbxqcxiiqjifnxbozbiyatdzqpaljevpisfksovkxfqmctcdumdviiwyxwljcgykadvsrsdqx"
-        >>> s.lengthOfLongestSubstring(string)
-        13
         """
-        beg, end = 0, 1
         length = len(s)
-        if not s:
-            return 0
+        if not length: return 0
+        beg, end = 0, 0
         max_length = 1
-        while beg != length - 1:
-            substring = s[beg:end]
-            distance = end - beg
-            if len(set(substring)) == distance and distance > max_length:
-                    max_length = distance
-            if end == length:
-                beg += 1
-                end = beg
-            else:
+        while beg < length and end < length:
+            if s[end] not in s[beg:end]:
                 end += 1
+                max_length = max(max_length, end - beg)
+            else:
+                beg += 1
         return max_length
 
+
 if __name__ == "__main__":
+    import doctest
     doctest.testmod(verbose=True)
-    # s = Solution()
-    # # string = "b"
-    # # print(s.lengthOfLongestSubstring(string))
-    # # string = "abcabcbb"
-    # # print(s.lengthOfLongestSubstring(string))
-    # # string = "bbbbb"
-    # # print(s.lengthOfLongestSubstring(string))
-    # # string = "pwwkew"
-    # # print(s.lengthOfLongestSubstring(string))
-    # # string = "abcdedf"
-    # # print(s.lengthOfLongestSubstring(string))
-    # # string = "bbbbbbdf"
-    # # print(s.lengthOfLongestSubstring(string))
-    # # string = "abcdefg"
-    # # print(s.lengthOfLongestSubstring(string))
-    # # string = "dfbbbbbb"
-    # # print(s.lengthOfLongestSubstring(string))
-    # # string = "ohomm"
-    # # print(s.lengthOfLongestSubstring(string))
-    # string = "enuyazszxldyujzvucidbxqcxiiqjifnxbozbiyatdzqpaljevpisfksovkxfqmctcdumdviiwyxwljcgykadvsrsdqx"
-    # print(len(string))
-    # print(s.lengthOfLongestSubstring(string))
