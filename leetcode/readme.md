@@ -34,3 +34,4 @@ Python3
 |30|50|Pow(x, n)|Medium|Py3|0.213|
 |31|414|Third Maximum Number|Easy|Py3|0.2983|
 |32|61|Rotate List|Medium|Py3|0.5380|
+|33|19|Remove Nth Node From End of List|Medium|Py3|0.1827|
