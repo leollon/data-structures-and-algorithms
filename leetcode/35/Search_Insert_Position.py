@@ -55,23 +55,15 @@ class Solution:
             >>> s.search_insert(nums, target)
             1
         """
-        nums.sort()
-        return self.binary_search(nums, target)
-        
-    def binary_search(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :type: int
-        """
         low, height = 0, len(nums) - 1
         while low <= height:
-            mid = low + (height - height) // 2
+            mid = low + (height - low) // 2
             if nums[mid] < target:
                 low = mid + 1
             elif nums[mid] > target:
                 height = mid - 1
             else:
+                low = mid
                 break
         return low
 
