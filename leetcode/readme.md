@@ -37,3 +37,4 @@ Python3
 |33|19|Remove Nth Node From End of List|Medium|Py3|0.1827|
 |34|3| Longest Substring Without Repeating Characters|Medium|Py3|0.4051|
 |35|75|Sort Colors|Medium|Py3|0.1378|
+|36|33|Search in Rotated Sorted Array|Medium|Py3|0.2542|
