@@ -39,3 +39,4 @@ Python3
 |35|75|Sort Colors|Medium|Py3|0.1378|
 |36|33|Search in Rotated Sorted Array|Medium|Py3|0.2542|
 |37|80|Remove Duplicates from Sorted Array II|Medium|Py3|0.2845|
+|38|929|Unique Email Addresses|Easy|Py3|0.2870|
