@@ -67,15 +67,15 @@ class Solution(object):
         left, right = 0, 1
         while right < len(nums):
             if nums[left] == 0:
+                # 将左边数值为0和右边不等于0的数值进行交换
                 if nums[right] != 0:
                     nums[right], nums[left] = nums[left], nums[right]
-                    left += 1
-                    right += 1
                 else:
+                    # 寻找第一个非0的数值
                     right += 1
-            else:
-                left += 1
-                right += 1
+                    continue
+            left += 1
+            right += 1
 
 
 if __name__ == "__main__":
