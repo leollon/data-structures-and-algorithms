@@ -41,3 +41,4 @@ Python3
 |37|80|Remove Duplicates from Sorted Array II|Medium|Py3|0.2845|
 |38|929|Unique Email Addresses|Easy|Py3|0.2870|
 |39|283|Move zeroes|Easy|Py3|0.4571|
+|40|565|Array Nesting|Medium|Py3|0.2572|
