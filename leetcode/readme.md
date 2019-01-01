@@ -43,3 +43,4 @@ Python3
 |39|283|Move zeroes|Easy|Py3|0.4571|
 |40|565|Array Nesting|Medium|Py3|0.2572|
 |41|242|Valid Anagram|Easy|Py3|0.1919|
+|42|217|Contains Duplicate|Easy|Py3|1|
