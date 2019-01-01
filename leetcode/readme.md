@@ -42,3 +42,4 @@ Python3
 |38|929|Unique Email Addresses|Easy|Py3|0.2870|
 |39|283|Move zeroes|Easy|Py3|0.4571|
 |40|565|Array Nesting|Medium|Py3|0.2572|
+|41|242|Valid Anagram|Easy|Py3|0.1919|
