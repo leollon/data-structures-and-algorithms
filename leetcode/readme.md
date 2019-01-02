@@ -44,3 +44,4 @@ Python3
 |40|565|Array Nesting|Medium|Py3|0.2572|
 |41|242|Valid Anagram|Easy|Py3|0.1919|
 |42|217|Contains Duplicate|Easy|Py3|1|
+|43|338|Counting Bits|Medium|Py3|0.4007|
