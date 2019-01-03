@@ -45,3 +45,4 @@ Python3
 |41|242|Valid Anagram|Easy|Py3|0.1919|
 |42|217|Contains Duplicate|Easy|Py3|1|
 |43|338|Counting Bits|Medium|Py3|0.4007|
+|44|206|Reverse Linked List|Easy|Py3|0.3467|
