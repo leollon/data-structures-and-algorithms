@@ -34,10 +34,10 @@ class Solution1:
         first = head
         reverse = None
         while first:
-            second = first.next   # 保存后面所有节点的开始节点
-            first.next = reverse  # 将当前节点的指针指向前一个节点
-            reverse = first       # 移动到下一个已经更改指针方向的节点
-            first = second        # 将节点移动到下一个需要更改指针的结点
+            second = first.next   # 保存后面所有结点的开始结点
+            first.next = reverse  # 将当前结点的指针指向前一个结点
+            reverse = first       # 移动到下一个已经更改指针方向的结点
+            first = second        # 将结点移动到下一个需要更改指针的结点
         return reverse
 
 
@@ -48,13 +48,13 @@ class Solution2:
         :type head: ListNode
         :rtype: ListNode
         """
-        if not head: return head  # 空链表
-        if not head.next: return head  # 到达尾节点
-        second = head.next  # 保存当前节点指向后续节点的指针
-        rest = self.reverseList(second) # 继续往后续节点进行递归，子问题方向，最终返回的尾节点是头节点
-        second.next = head  # 将子问题的节点的指针指向父问题的节点
-        head.next = None  # 将父问题的节点的指针设置为None
-        return rest  # 一直返回尾结点，递归结束就是尾节点就是首节点
+        if not head: return head         # 空链表
+        if not head.next: return head    # 到达尾结点
+        second = head.next               # 保存当前结点指向后续结点的指针
+        rest = self.reverseList(second)  # 继续往后续结点进行递归，子问题方向，最终返回的尾结点是头结点
+        second.next = head               # 将子问题的结点的指针指向父问题的结点
+        head.next = None                 # 将父问题的结点的指针设置为None
+        return rest                      # 一直返回尾结点，递归结束就是尾结点就是首结点
 
 
 class TestBase:

@@ -13,5 +13,5 @@ class Solution:
         curr = listNode
         while curr is not None:
             result_list.insert(0, curr.val)
-            curr = curr.next # 下一个节点的地址，地址为None的时候，退出循环
+            curr = curr.next # 下一个结点的地址，地址为None的时候，退出循环
         return result_list

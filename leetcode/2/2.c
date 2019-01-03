@@ -37,27 +37,27 @@ struct ListNode *addTwoNumbers(struct ListNode *l1, struct ListNode *l2)
         sum = 0;
     while (p || q)
     {
-        x = (p != NULL) ? p->val : 0; // 存在后继节点则取后继节点的值，否则为0
+        x = (p != NULL) ? p->val : 0; // 存在后继结点则取后继结点的值，否则为0
         y = (q != NULL) ? q->val : 0; // 同上
         sum = x + y + carry;
         carry = sum / 10;
         Node *new_node = (Node *)malloc(sizeof(Node));
         new_node->next = NULL;
-        new_node->val = sum % 10; // 节点的值取求和后取模
-        tmp->next = new_node;     // 头节点指向下一个节点
-        tmp = new_node;           // 上一个节点到新生成的节点
-        p = p ? p->next : NULL;   // 当前节点不为空，移动当前节点到下一个节点
+        new_node->val = sum % 10; // 结点的值取求和后取模
+        tmp->next = new_node;     // 头结点指向下一个结点
+        tmp = new_node;           // 上一个结点到新生成的结点
+        p = p ? p->next : NULL;   // 当前结点不为空，移动当前结点到下一个结点
         q = q ? q->next : NULL;   // 同上
     }
     if (carry == 1)
     {
-        // 正好遍历到最后一次之前，求和的结果大于10,得新生成一个节点保存进位的值
+        // 正好遍历到最后一次之前，求和的结果大于10,得新生成一个结点保存进位的值
         Node *new_node = (Node *)malloc(sizeof(Node));
         new_node->next = NULL;
         new_node->val = carry;
         tmp->next = new_node;
     }
-    return head->next; // 返回头节点的下一个节点
+    return head->next; // 返回头结点的下一个结点
 }
 
 int main()
