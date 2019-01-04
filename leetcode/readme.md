@@ -47,3 +47,4 @@ Python3
 |43|338|Counting Bits|Medium|Py3|0.4007|
 |44|206|Reverse Linked List|Easy|Py3|0.3467|
 |45|162|Find peek element|Medium|Py3|0.0511|
+|46|141|Linked List Cycle|Easy|Py2|0.2705|
