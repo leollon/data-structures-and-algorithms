@@ -48,4 +48,5 @@ Python3
 |44|206|Reverse Linked List|Easy|Py3|0.3467|
 |45|162|Find peek element|Medium|Py3|0.0511|
 |46|141|Linked List Cycle|Easy|Py2|0.2705|
-|46|142|Linked List Cycle II|Medium|Py2|0.0454|
+|47|142|Linked List Cycle II|Medium|Py2|0.0454|
+|48|648|Replace Words|Medium|Py3|0.2234|
