@@ -50,3 +50,4 @@ Python3
 |46|141|Linked List Cycle|Easy|Py2|0.2705|
 |47|142|Linked List Cycle II|Medium|Py2|0.0454|
 |48|648|Replace Words|Medium|Py3|0.2234|
+|50|387|First Unique Character in a String|Py3|Easy|0.0589|
