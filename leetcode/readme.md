@@ -1,5 +1,6 @@
 Python3
 
+# Solved
 |#|Problem|Name|Difficulty|Language|Speed|
 |:----:|:----:|:----:|:----:|:----:|:----:|
 |1|7|Reverse Integer|Easy|Py3|0.2267|
@@ -52,3 +53,4 @@ Python3
 |48|648|Replace Words|Medium|Py3|0.2234|
 |50|387|First Unique Character in a String|Py3|Easy|0.0589|
 |51|389|Find the Difference|Py3|Easy|0.5367|
+|52|34|Find First and Last Position of Element in Sorted Array|Py3|Medium|0.1919|
