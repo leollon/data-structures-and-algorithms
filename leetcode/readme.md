@@ -54,3 +54,4 @@ Python3
 |50|387|First Unique Character in a String|Py3|Easy|0.0589|
 |51|389|Find the Difference|Py3|Easy|0.5367|
 |52|34|Find First and Last Position of Element in Sorted Array|Py3|Medium|0.1919|
+|53|867|Transpose Matrix|Py3|Easy|0.4452|
