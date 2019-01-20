@@ -58,3 +58,4 @@ Python3
 |54|215|Kth Largest Element in an Array|Py3|Medium|0.5213|
 |55|239|Sliding Window Maximum|Py3|Hard|0.0473|
 |56|641|Design Circular Deque|Py3|Medium|0.4143|
+|57|622|Design Circular Queue|Py3|Medium|0.6182|
