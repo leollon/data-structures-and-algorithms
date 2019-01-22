@@ -59,3 +59,4 @@ Python3
 |55|239|Sliding Window Maximum|Py3|Hard|0.0473|
 |56|641|Design Circular Deque|Py3|Medium|0.4143|
 |57|622|Design Circular Queue|Py3|Medium|0.6182|
+|58|225|Implement Stack using Queues|Py3|Easy|0.1764|
