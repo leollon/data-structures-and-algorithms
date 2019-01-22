@@ -62,3 +62,4 @@ Python3
 |58|225|Implement Stack using Queues|Py3|Easy|0.9965|
 |59|232|Implement Queue using Stack|Py3|Easy|1|
 |60|9|Palindrome|Py3|Easy|0.9833|
+|61|709|To Lower Case|Py3|Easy|0.9970|
