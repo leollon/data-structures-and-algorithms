@@ -60,3 +60,4 @@ Python3
 |56|641|Design Circular Deque|Py3|Medium|0.4143|
 |57|622|Design Circular Queue|Py3|Medium|0.6182|
 |58|225|Implement Stack using Queues|Py3|Easy|0.9965|
+|59|232|Implement Queue using Stack|Py3|Easy|1|
