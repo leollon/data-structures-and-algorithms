@@ -61,3 +61,4 @@ Python3
 |57|622|Design Circular Queue|Py3|Medium|0.6182|
 |58|225|Implement Stack using Queues|Py3|Easy|0.9965|
 |59|232|Implement Queue using Stack|Py3|Easy|1|
+|60|9|Palindrome|Py3|Easy|0.9833|
