@@ -34,8 +34,7 @@ class MyStack:
         """
         Initialize your data structure here.
         """
-        self.tail = []
-        self.head = []
+        self.queue = []
         
 
     def push(self, x):
@@ -44,8 +43,11 @@ class MyStack:
         :type x: int
         :rtype: void
         """
-        self.tail.append(x)
-        self.head.insert(0, x)
+        self.queue.append(x)
+        tail = len(self.queue) - 1
+        while tail > 0:
+            self.queue[tail], self.queue[tail-1] = self.queue[tail-1], self.queue[tail]
+            tail -= 1
         
 
     def pop(self):
@@ -53,24 +55,22 @@ class MyStack:
         Removes the element on top of the stack and returns that element.
         :rtype: int
         """
-        if not len(self.tail): return None
-        self.tail.pop(-1)
-        return self.head.pop(0)
+        return self.queue.pop(0)
+        
 
     def top(self):
         """
         Get the top element.
         :rtype: int
         """
-        if not len(self.tail): return None
-        return self.head[0]
+        return self.queue[0]
 
     def empty(self):
         """
         Returns whether the stack is empty.
         :rtype: bool
         """
-        return len(self.tail) == 0
+        return len(self.queue) == 0
 
 
 class TestMyStack(unittest.TestCase):
