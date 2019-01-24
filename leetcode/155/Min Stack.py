@@ -52,7 +52,7 @@ class MinStack:
         """
         :rtype: int
         """
-        return sorted(self.stack)[0]
+        return min(self.stack)
 
 
 class TestMinStack(unittest.TestCase):
