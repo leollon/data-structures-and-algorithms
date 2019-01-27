@@ -65,3 +65,4 @@ Python3
 |61|709|To Lower Case|Py3|Easy|0.9970|
 |62|155|Min Stack|Py3|Easy|0.0707|
 |63|880|Decoded String at Index|Py3|Easy|1|
+|64|895|Maximum Frequency Stack|Py3|Hard|0|
