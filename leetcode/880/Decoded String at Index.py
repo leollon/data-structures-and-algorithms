@@ -65,24 +65,26 @@ class Solution:
         >>> s.decodeAtIndex(ss, k)
         'h'
 
-        >>> ss, k = "2ha22", 5
-        >>> s.decodeAtIndex(ss, k)
-        'h'
-
         >>> ss, k = "czjkk9elaqwiz7s6kgvl4gjixan3ky7jfdg3kyop3husw3fm289thisef8blt7a7zr5v5lhxqpntenvxnmlq7l34ay3jaayikjps", 768077956
         >>> s.decodeAtIndex(ss, k)
         'c'
         """
-        if not s: return None
-        string = ['']
+        length = 0
+        # 先求编码完后的字符串的总长度，即length
         for ch in s:
             if ch.isdigit():
-                string[0] *= int(ch)
-            elif ch.isalpha():
-                string[0] += ch
-            if len(string[0]) >= k:
-                break
-        return string[0][k-1]
+                length *= int(ch)
+            else:
+                length += 1
+        for ch in reversed(s):
+            # 翻转字符串，进行与编码后求总长度的相反运算，同时对k进行模运算
+            k %= length
+            if k == 0 and ch.isalpha():
+                return ch
+            if ch.isalpha():
+                length -= 1
+            else:
+                length //= int(ch)
 
 
 if __name__ == "__main__":
