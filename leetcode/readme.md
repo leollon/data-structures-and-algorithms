@@ -66,3 +66,4 @@ Python3
 |62|155|Min Stack|Py3|Easy|0.0707|
 |63|880|Decoded String at Index|Py3|Easy|1|
 |64|895|Maximum Frequency Stack|Py3|Hard|0|
+|65|347|Top K Frequent Elements|Py3|Medium|0.0542|
