@@ -40,6 +40,9 @@ Note:
     TimeMap.set and TimeMap.get functions will be called a total of 120000
 times (combined) per test case.
 """
+import collections  # built-in data structure
+import bisect  # binary search
+import unittest
 
 
 class TimeMap:
@@ -48,23 +51,44 @@ class TimeMap:
         """
         Initialize your data structure here.
         """
-        self._table = {}
+        self._table = collections.defaultdict(list)
         
 
     def set(self, key: 'str', value: 'str', timestamp: 'int') -> 'None':
-        if key not in self._table:
-            self._table[key] = {timestamp: value}
-        else:
-            self._table[key][timestamp] = value
+        self._table[key].append((timestamp, value))
 
     def get(self, key: 'str', timestamp: 'int') -> 'str':
-        timestamps = sorted(self._table[key])
-        cursor = 1
-        while cursor < len(timestamps) and timestamps[cursor] <= timestamp:
-            cursor += 1
-        if timestamps[cursor-1] > timestamp:
-            return ""
-        return self._table[key][timestamps[cursor - 1]]
+        values = self._table.get(key, None)
+        if not values: return ""
+        # find the first one to larger than timestamp, return its index,
+        # otherwise return 0
+        cursor = bisect.bisect(values, (timestamp, chr(127)))
+        if not cursor: return ""
+        return self._table[key][cursor - 1][1]
 
 
+class TestTimeMap(unittest.TestCase):
 
+    @staticmethod
+    def create_time_map():
+        return TimeMap()
+
+    def test_get(self):
+        time_map = self.create_time_map()
+        time_map.set("foo", "bar", 1)
+        self.assertEqual("bar", time_map.get("foo", 1))
+        self.assertEqual("bar", time_map.get("foo", 2))
+        self.assertEqual("bar", time_map.get("foo", 3))
+
+        time_map.set("foo", "bar2", 4)
+        self.assertEqual("bar2", time_map.get("foo", 4))
+        self.assertEqual("bar2", time_map.get("foo", 5))
+
+        time_map.set("foo", "bar6", 6)
+        self.assertEqual("bar", time_map.get("foo", 1))
+        self.assertEqual("bar", time_map.get("foo", 2))
+        self.assertEqual("bar4", time_map.get("foo", 4))
+
+
+if __name__ == "__main__":
+    unittest.main()
