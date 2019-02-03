@@ -69,3 +69,4 @@ Python3
 |65|347|Top K Frequent Elements|Py3|Medium|0.0542|
 |66|981|Time Based Key-Value Store|Py3|Medium|0.6052|
 |67|451|Sort Characters By Frequency|Py3|Medium|0.8439|
+|68|219|Contains Duplicate II|Py3|Easy|0.50|
