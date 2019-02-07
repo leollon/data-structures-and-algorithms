@@ -70,3 +70,4 @@ Python3
 |66|981|Time Based Key-Value Store|Py3|Medium|0.6052|
 |67|451|Sort Characters By Frequency|Py3|Medium|0.8439|
 |68|219|Contains Duplicate II|Py3|Easy|0.50|
+|69|844|Backspace String Compare|Py3|Easy|0.9888|
