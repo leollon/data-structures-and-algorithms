@@ -72,3 +72,4 @@ Python3
 |68|219|Contains Duplicate II|Py3|Easy|0.50|
 |69|844|Backspace String Compare|Py3|Easy|0.9888|
 |70|190|Reverse Bits|Py2|Easy|0.8878|
+|71|136|Single Number|Py3|Easy|0.0207|
