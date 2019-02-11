@@ -71,3 +71,4 @@ Python3
 |67|451|Sort Characters By Frequency|Py3|Medium|0.8439|
 |68|219|Contains Duplicate II|Py3|Easy|0.50|
 |69|844|Backspace String Compare|Py3|Easy|0.9888|
+|70|190|Reverse Bits|Py2|Easy|0.8878|
