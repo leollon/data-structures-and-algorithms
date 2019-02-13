@@ -55,5 +55,44 @@ class Solution(object):
         return -1
 
 
+class SecondSolution(object):
+    def strStr(self, haystack, needle):
+        """
+        :type haystack: str
+        :type needle: str
+        :rtype: int
+
+        Examples
+
+            >>> s = Solution()
+            >>> haystack, needle = "hello", "ll"
+            >>> s.strStr(haystack, needle)
+            2
+
+            >>> haystack, needle = "hello", ""
+            >>> s.strStr(haystack, needle)
+            0
+
+            >>> haystack, needle = "", " "
+            >>> s.strStr(haystack, needle)
+            -1
+
+            >>> haystack, needle = " ", ""
+            >>> s.strStr(haystack, needle)
+            0
+
+            >>> haystack, needle = "a", "a"
+            >>> s.strStr(haystack, needle)
+            0
+        """
+        if not needle: return 0
+        right = len(needle)
+        while right <= len(haystack):
+            if haystack[right - len(needle): right] == needle:
+                return right - len(needle)
+            right += 1
+        return -1
+
+
 if __name__ == "__main__":
     doctest.testmod(verbose=True)
