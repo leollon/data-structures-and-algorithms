@@ -65,7 +65,7 @@ Python3
 |61|709|To Lower Case|Py3|Easy|0.9970|
 |62|155|Min Stack|Py3|Easy|0.0707|
 |63|880|Decoded String at Index|Py3|Easy|1|
-|64|895|Maximum Frequency Stack|Py3|Hard|0|
+|64|895|Maximum Frequency Stack|Py3|Hard|0.0262|
 |65|347|Top K Frequent Elements|Py3|Medium|0.0542|
 |66|981|Time Based Key-Value Store|Py3|Medium|0.6052|
 |67|451|Sort Characters By Frequency|Py3|Medium|0.8439|
