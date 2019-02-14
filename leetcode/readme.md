@@ -75,3 +75,4 @@ Python3
 |71|136|Single Number|Py3|Easy|0.0207|
 |72|66|Plus One|Py3|Easy|1|
 |73|28|Implement strStr()|Py3|Easy|1|
+|74|287|Find the Duplicate Number|Py3|Medium|1|
