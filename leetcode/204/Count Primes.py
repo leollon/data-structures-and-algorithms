@@ -11,20 +11,35 @@ import doctest
 
 
 class Solution:
-    def countPrimes(self, n: 'int') -> 'int':
-        primes = []
-        for num in range(2, n):
-            if self.is_prime(num):
-                primes.append(num)
-        return len(primes)
-    
-    def is_prime(self, n):
-        i = 2
-        while i <= int(math.sqrt(n)):
-            if (n % i) == 0:
-                return False
-            i += 1
-        return True
+    def countPrimes(self, n):
+        """
+        :type n: int
+        :rtype: int
+        
+        Examples
+
+            >>> s = Solution()
+            >>> n = 10
+            >>> s.countPrimes(n)
+            4
+
+            >>> n = 1
+            >>> s.countPrimes(n)
+            0
+
+            >>> n = 499979
+            >>> s.countPrimes(n)
+            41537
+        """
+        if n <= 1: return 0
+        primes = [True] * n
+        primes[0] = primes[1] = False
+        for i in range(2, int(n ** 0.5) + 1):
+            if primes[i]:
+                for j in range(i * i, n, i):
+                    primes[j] = False
+        return primes.count(True)
 
 
-
+if __name__ == "__main__":
+    doctest.testmod(verbose=True)

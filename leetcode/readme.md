@@ -76,3 +76,4 @@ Python3
 |72|66|Plus One|Py3|Easy|1|
 |73|28|Implement strStr()|Py3|Easy|1|
 |74|287|Find the Duplicate Number|Py3|Medium|1|
+|75|204|Count Primes|Py3|Easy|0.7273|
