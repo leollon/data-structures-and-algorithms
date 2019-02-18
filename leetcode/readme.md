@@ -77,3 +77,4 @@ Python3
 |73|28|Implement strStr()|Py3|Easy|1|
 |74|287|Find the Duplicate Number|Py3|Medium|1|
 |75|204|Count Primes|Py3|Easy|0.7273|
+|75|240|Search a 2D Matrix|Py3|Medium|0.9533|
