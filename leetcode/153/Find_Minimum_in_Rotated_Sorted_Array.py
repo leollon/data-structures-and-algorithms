@@ -53,10 +53,9 @@ class Solution:
             >>> s.findMin(nums)
         """
         if not len(nums): return None
-        is_ascending = self.is_ascending(nums)
         target = nums[0]
         low, height = 1, len(nums) - 1
-        while low <= height and not is_ascending:
+        while low <= height:
             mid = low + (height - low) // 2
             if nums[mid] > target:
                 low = mid + 1
@@ -64,15 +63,6 @@ class Solution:
                 height = mid - 1
                 target = nums[mid]
         return target
-
-    def is_ascending(self, nums):
-        size = len(nums)
-        is_ascending = True
-        for i in range(len(nums) // 2):
-            if nums[i] > nums[size - i - 1]:
-                is_ascending = False
-                break
-        return is_ascending
 
 
 if __name__ == "__main__":
