@@ -67,5 +67,65 @@ class Solution:
         return head.next
 
 
+class OptimizedSolution:
+    def addTwoNumbers(self, l1, l2):
+        """
+        :type l1: ListNode
+        :type l2: ListNode
+        :rtype: ListNode
+        >>> s = Solution()
+
+        Examples:
+            >>> l1 = ListNode(2)
+            >>> l1.next = ListNode(4)
+            >>> l1.next.next = ListNode(3)
+            >>> l2 = ListNode(5)
+            >>> l2.next = ListNode(6)
+            >>> l2.next.next = ListNode(4)
+            >>> l = s.addTwoNumbers(l1, l2)
+            >>> while l:
+            ...     print(l.val, end='')
+            ...     l = l.next
+            708
+            >>> l1 = ListNode(1)
+            >>> l1.next = ListNode(8)
+            >>> l2 = ListNode(0)
+            >>> l = s.addTwoNumbers(l1, l2)
+            >>> while l:
+            ...     print(l.val, end='')
+            ...     l = l.next
+            18
+        """
+        remaining = 0
+        head1, head2 = l1, l2
+        while head1 and head2:
+            result = head1.val + head2.val + remaining
+            head1.val = result % 10
+            remaining = result // 10
+            last = head1
+            head1 = head1.next
+            head2 = head2.next
+        while True:
+            if head1 and not head2:
+                result = head1.val + remaining
+                head1.val = result % 10
+                remaining = result // 10
+                last = head1
+                head1 = head1.next
+            elif head2 and not head1:
+                result = head2.val + remaining
+                head2.val = result % 10
+                remaining = result // 10
+                last.next = head2
+                last = head2
+                head2 = head2.next
+            elif remaining:
+                last.next = ListNode(remaining)
+                remaining = 0
+            if not remaining:
+                break
+        return l1
+
+
 if __name__ == '__main__':
     doctest.testmod(verbose=True)

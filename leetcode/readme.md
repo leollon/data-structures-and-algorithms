@@ -5,7 +5,7 @@ Python3
 |:----:|:----:|:----:|:----:|:----:|:----:|
 |1|7|Reverse Integer|Easy|Py3|0.2267|
 |2|189|Rotate Array|Easy|Py3|0.1094|
-|3|2|Add Two Numbers(*)|Medium|Py3/C|0.0088/1|
+|3|2|Add Two Numbers|Medium|Py3/C|1/1|
 |4|1|Two Sum|Easy|Py3/C|0.1608/0.19|
 |5|83|Remove Duplicates from Sorted List|Easy|Py3/C|0.8739/0.8179|
 |6|771|Jewels and Stones|Easy|Py3/C|0.4648/1|
