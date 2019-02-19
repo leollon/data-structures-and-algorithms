@@ -29,16 +29,15 @@ class Solution:
             >>> s.lastRemaining(n)
             32896342
         """
-        array = list(range(1, n + 1))
-        return self.remove(array, len(array))
-
-    def remove(self, array, length):
-        if length == 1:
-            return array[0]
-        else:
-            new_array = list(reversed(array[1:length:2]))
-            length = len(new_array)
-            return self.remove(new_array, length)
+        left = True
+        first, step = 1, 1
+        while n > 1:
+            if left or n % 2 == 1:
+                first += step
+            n >>= 1
+            step <<= 1
+            left = not left
+        return first
 
 
 if __name__ == "__main__":
