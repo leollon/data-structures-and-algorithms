@@ -42,14 +42,15 @@ class Solution:
         while stack1 or stack2:
             v1 = stack1.pop() if stack1 else 0
             v2 = stack2.pop() if stack2 else 0
-            new_node = ListNode((v1 + v2 + remaining) % 10)
-            remaining = (v1 + v2 + remaining) // 10
+            result = v1 + v2 + remaining
+            new_node = ListNode(result % 10)
+            remaining = result // 10
             new_node.next = next_node
             next_node = new_node
-        if remaining:
-            new_node = ListNode(remaining)
-            new_node.next = next_node
-            next_node = new_node
+            if remaining and not stack1 and not stack2:
+                new_node = ListNode(remaining)
+                new_node.next = next_node
+                next_node = new_node
         return next_node
 
 
