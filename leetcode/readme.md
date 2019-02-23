@@ -82,3 +82,4 @@ Python3
 |78|390|Elimination Game|Py3|Medium|0.4063*|
 |79|445|Add Two Numbers II|Py3|Medium|0.9661|
 |80|234|Palindrome Linked List|Py3|Medium|0.3671|
+|81|48|Rotate Image|Py3|Medium|0.4774|
