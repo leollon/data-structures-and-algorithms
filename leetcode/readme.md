@@ -86,3 +86,4 @@ Python3
 |82|238|Product of Array Except Self|Py3|Medium|0.4090|
 |83|92|Reverse Linked List II|Py3|Medium|0.1990|
 |84|707|Design Linked List|Py3|Easy|0.7312|
+|85|104|Maximum Depth of Binary Tree|Py3|Easy|0.3806|
