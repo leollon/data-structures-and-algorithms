@@ -87,3 +87,4 @@ Python3
 |83|92|Reverse Linked List II|Py3|Medium|0.1990|
 |84|707|Design Linked List|Py3|Easy|0.7312|
 |85|104|Maximum Depth of Binary Tree|Py3|Easy|0.3806|
+|86|509|Fibonacci Number|Py3|Easy|0.3345|
