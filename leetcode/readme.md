@@ -88,3 +88,4 @@ Python3
 |84|707|Design Linked List|Py3|Easy|0.7312|
 |85|104|Maximum Depth of Binary Tree|Py3|Easy|0.3806|
 |86|509|Fibonacci Number|Py3|Easy|0.3345|
+|87|46|Permutations|Py3|Medium|0.8862|
