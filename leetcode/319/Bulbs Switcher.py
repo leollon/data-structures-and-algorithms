@@ -68,6 +68,42 @@ class Solution:
         return bulbs.count(1)
 
 
+class BestSolution:
+    def bulbSwitch(self, n):
+        """
+        :type n: int
+        :rtype: int
+
+        Examples
+
+            >>> s = Solution()
+            >>> n = 0
+            >>> s.bulbSwitch(n)
+            0
+
+            >>> n = 1
+            >>> s.bulbSwitch(n)
+            1
+
+            >>> n = 3
+            >>> s.bulbSwitch(n)
+            1
+
+            >>> n = 4
+            >>> s.bulbSwitch(n)
+            2
+
+            >>> n = 5
+            >>> s.bulbSwitch(n)
+            2
+
+            >>> n = 10
+            >>> s.bulbSwitch(n)
+            3
+        """
+        return int(math.sqrt(n))
+
+
 if __name__ == "__main__":
     import doctest
     doctest.testmod(verbose=True)
