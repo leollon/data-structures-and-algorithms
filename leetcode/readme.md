@@ -90,3 +90,4 @@ Python3
 |86|509|Fibonacci Number|Py3|Easy|0.3345|
 |87|46|Permutations|Py3|Medium|0.8862|
 |88|319|Bulb Switcher|Py3|Medium|0.7059|
+|89|160|Intersection of Two Linked Lists|Py3|Easy|0.5014|
