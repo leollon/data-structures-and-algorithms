@@ -33,7 +33,7 @@ class Solution:
         :type head: ListNode
         :type n: int
         :rtype: ListNode
-        
+
         Examples:
 
             >>> s = Solution()
@@ -71,6 +71,29 @@ class Solution:
         else:
             prev_node = node_dict[pos]
             prev_node.next = prev_node.next.next
+        return head
+
+
+class BetterSolution:
+    def removeNthFromEnd(self, head, n):
+        """
+        :type head: ListNode
+        :type n: int
+        :rtype: ListNode
+        """
+        first, second = head, head
+        nxt = None
+        while first.next:
+            first = first.next
+            n -= 1
+            if n < 1:
+                nxt = second
+                second = second.next
+        if not nxt:
+            head = head.next
+        else:
+            nxt.next = second.next
+            second.next = None
         return head
 
 
