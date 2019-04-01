@@ -93,3 +93,4 @@ Python3
 |89|160|Intersection of Two Linked Lists|Py3|Easy|0.5014|
 |90|24|Swap Nodes in Pairs|Py3|Medium|0.7915|
 |91|82|Remove Duplicates from Sorted List II|Py3|Medium|0.7679|
+|92|86|Partition List|Py3|Medium|0.9679|
