@@ -96,3 +96,4 @@ Python3
 |92|86|Partition List|Py3|Medium|0.9679|
 |93|203|Remove Linked List Elements|Py3|Medium|0.7350|
 |94|328|Odd Even Linked List|Py3|Medium|0.8435|
+|95|56|Merge Intervals|Py3|Medium|0.4853|
