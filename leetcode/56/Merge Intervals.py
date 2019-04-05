@@ -11,7 +11,7 @@ Example 2:
 
     Input: [[1,4],[4,5]]
     Output: [[1,5]]
-    Explanation: Intervals [1,4] and [4,5] are considered overlapping.
+    Explanationervals [1,4] and [4,5] are considered overlapping.
 """
 
 
@@ -25,8 +25,8 @@ class Interval:
 class Solution:
     def merge(self, intervals):
         """
-        :type: List[Interval]
-        :rtype: List[Interval]
+        :type
+        :rtype
         asume that:
             c1 = (a1, b1)
             c2 = (a2, b2)
@@ -123,9 +123,16 @@ class Solution:
             >>> result = s.merge(intervals)
             >>> s.show(result)
             [[1, 10]]
+
+            >>> nums = [[4, 5], [2, 4], [4, 6], [3, 4], [0, 0], [1, 1], [3, 5], [2, 2]]
+            >>> intervals = create(nums)
+            >>> result = s.merge(intervals)
+            >>> s.show(result)
+            [[0, 0], [1, 1], [2, 6]]
         """
         length = len(intervals)
-        intervals.sort(key=lambda x: x.start)  # 按照每一个区间的左值进行升序排序
+        # intervals.sort(key=lambda x: x.start)  # 按照每一个区间的左值进行升序排序
+        self.quick_sort(intervals, 0, len(intervals) - 1)
         if length < 2:
             return intervals
         result = []
@@ -151,6 +158,30 @@ class Solution:
                 break
             nxt = intervals[cursor]
         return result
+
+    def quick_sort(self, intervals, left, right):
+        if left >= right:
+            return
+        pivot_index = self.partition(intervals, left, right)
+        self.quick_sort(intervals, left, pivot_index)
+        self.quick_sort(intervals, pivot_index + 1, right)
+
+    def partition(self, intervals, left, right):
+        pivot_index = left
+        i, j = left + 1, right
+        while True:
+            while i < right and intervals[i].start <= intervals[pivot_index].start:
+                i += 1
+            while left < j and intervals[j].start >= intervals[pivot_index].start:
+                j -= 1
+            if i >= j:
+                break
+            intervals[i], intervals[j] = intervals[j], intervals[i]
+        if intervals[j].start <= intervals[left].start:
+            intervals[left], intervals[j] = intervals[j], intervals[left]
+        else:
+            j += 1
+        return j
 
     def show(self, array):
         result = []
