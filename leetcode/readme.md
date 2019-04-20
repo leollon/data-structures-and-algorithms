@@ -99,3 +99,4 @@ Python3
 |95|56|Merge Intervals|Py3|Medium|0.4853|
 |96|724|Find Pivot Index|Py3|Easy|0.9986|
 |97|228|Summary Ranges|Py3|Medium|0.7119|
+|98|112|Path Sum|Py3|Easy|0.7906|
