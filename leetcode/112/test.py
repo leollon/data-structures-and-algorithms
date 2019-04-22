@@ -19,7 +19,7 @@ class TestSolution(unittest.TestCase):
             front += 1
             item = array[index]
             index += 1
-            if item:
+            if item is not None:
                 node.left = TreeNode(item)
                 node_queue.append(node.left)
 
@@ -28,7 +28,7 @@ class TestSolution(unittest.TestCase):
 
             item = array[index]
             index += 1
-            if item:
+            if item is not None:
                 node.right = TreeNode(item)
                 node_queue.append(node.right)
         return root

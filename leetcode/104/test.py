@@ -5,7 +5,8 @@ from Maximum_Depth_of_Binary_Tree import Solution, TreeNode
 class TestSolution(unittest.TestCase):
     @staticmethod
     def create_binary_tree(array):
-        if not array: return None
+        if not array:
+            return None
         root = TreeNode(array[0])
         node_queue = [root]
         front, index = 0, 1
@@ -15,16 +16,16 @@ class TestSolution(unittest.TestCase):
             front += 1
             item = array[index]
             index += 1
-            if item:
+            if item is not None:
                 node.left = TreeNode(item)
                 node_queue.append(node.left)
 
             if index >= len(sub_array):
                 break
-            
+
             item = array[index]
             index += 1
-            if item:
+            if item is not None:
                 node.right = TreeNode(item)
                 node_queue.append(node.right)
         return root
