@@ -103,4 +103,4 @@ Python3
 |99|113|Path Sum II|Py3|Medium|0.8581|
 |100|257|Binary Tree Paths|Py3|Easy|0.9785|
 |101|129|Sum Root to Leaf Numbers|Py3|Medium|0.7659|
-|102|18|4Sum|Py3|Medium|0.0501|
+|102|18|4Sum|Py3|Medium|0.1355|

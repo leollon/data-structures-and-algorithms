@@ -39,19 +39,24 @@ class Solution:
         nums.sort()
         length = len(nums)
         result = []
-        i = 0
-        while i < length:
-            j = i + 1
-            while j < length:
-                k = j + 1
-                while k < length:
-                    rest = target - (nums[i] + nums[j] + nums[k])
-                    index = bisect.bisect_left(nums, rest, k+1, length)
-                    if index < length and nums[index] == rest:
-                        result.append((nums[i], nums[j], nums[k], rest))
-                    k += 1
-                j += 1
-            i += 1
+        left = 0
+        while left < length - 3:
+            mid1 = left + 1
+            while mid1 < length - 2:
+                mid2 = mid1 + 1
+                right = length - 1
+                while mid2 < right:
+                    if (nums[left] + nums[mid1] + nums[mid2] + nums[right]) > target:
+                        right -= 1
+                    elif (nums[left] + nums[mid1] + nums[mid2] + nums[right]) < target:
+                        mid2 += 1
+                    else:
+                        result.append(
+                            (nums[left], nums[mid1], nums[mid2], nums[right]))
+                        mid2 += 1
+                        right -= 1
+                mid1 += 1
+            left += 1
         return list(set(result))
 
 
