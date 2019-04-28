@@ -104,3 +104,4 @@ Python3
 |100|257|Binary Tree Paths|Py3|Easy|0.9785|
 |101|129|Sum Root to Leaf Numbers|Py3|Medium|0.7659|
 |102|18|4Sum|Py3|Medium|0.1355|
+|103|111|Minimum Depth of Binary Tree|Py3|Easy|0.2434|
