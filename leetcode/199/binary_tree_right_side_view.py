@@ -35,7 +35,7 @@ class Solution:
 
     def _helper(self, node, result, level):
         if not node:
-            return level
+            return
         level += 1
         if len(result) < level:
             result.append(node.val)
