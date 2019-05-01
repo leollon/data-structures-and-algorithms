@@ -39,7 +39,5 @@ class Solution:
         level += 1
         if len(result) < level:
             result.append(node.val)
-        if not node.right:
-            self._helper(node.left, result, level)
         self._helper(node.right, result, level)
         self._helper(node.left, result, level)

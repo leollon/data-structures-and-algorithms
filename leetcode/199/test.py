@@ -40,7 +40,7 @@ class TestSolution(unittest.TestCase):
         root = self.create_binary_tree(array)
         self.assertEqual(s.rightSideView(root), [])
 
-        # The number of leaves of left subtree is equal to right subtree
+        # The level(height) of left subtree is equal to right subtree
         array = [1, 2, 3, None, 5, None, 4]
         root = self.create_binary_tree(array)
         self.assertEqual(s.rightSideView(root), [1, 3, 4])
@@ -50,8 +50,8 @@ class TestSolution(unittest.TestCase):
         root = self.create_binary_tree(array)
         self.assertEqual(s.rightSideView(root), [1, 2, 4])
 
-        # The number of leaves of left subtree is greater than the number
-        # of right subtree's leaves
+        # The level(height) of left subtree is greater than the number
+        # of right subtree's level(height).
         array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         root = self.create_binary_tree(array)
         self.assertEqual(s.rightSideView(root), [1, 3, 7, 10])
@@ -63,14 +63,14 @@ class TestSolution(unittest.TestCase):
         self.assertEqual(s.rightSideView(root), [1, 3, 7])
         [1, 2, 3, None, 5, None, 4]
 
-        # The number of leaves of left subtree is greater than the number
-        # of right subtree's leaves
+        # The level(height) of left subtree is greater than the number
+        # of right subtree's level(height).
         array = [1, 3, 2, None, 3, None, 4, None, 6]
         root = self.create_binary_tree(array)
         self.assertEqual(s.rightSideView(root), [1, 2, 4, 6])
 
-        # The number of leaves of left subtree is less than the number
-        # of right subtree's leaves
+        # The level(height) of left subtree is less than the number
+        # of right subtree's level(height).
         array = [1, 3, 2, None, 3, None, 4, None, None, 6]
         root = self.create_binary_tree(array)
         self.assertEqual(s.rightSideView(root), [1, 2, 4, 6])
