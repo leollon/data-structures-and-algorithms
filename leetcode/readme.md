@@ -108,4 +108,4 @@ Python3
 |104|102|Binary Tree Level Order Traversal|Py3|Medium|0.7687|
 |105|199|Binary Tree Right Side View|Py3|Medium|0.9483|
 |106|101|Symmetric Tree|Py3|Easy|0.5876|
-|107|144|Binary Tree Preorder Traversal|Py3|Medium|
+|107|144|Binary Tree Preorder Traversal|Py3|Medium|0.8372|

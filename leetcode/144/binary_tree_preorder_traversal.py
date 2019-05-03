@@ -60,14 +60,11 @@ class SolutionWithIteration:
                 # 遍历左结点
                 node = node.left
                 continue
-            else:
-                # 无左结点
-                if right_node:
-                    # 存在右结点
-                    node = right_node.pop()
-                else:
-                    node = node.right
-            if not node and right_node:
-                # 无左结点，但是存在右结点
+            # 无左结点或到达叶子结点之后了
+            if right_node:
+                # 遍历完了左结点，得遍历右结点或者右子树（当存在左子树和右子树的时候）
                 node = right_node.pop()
+            else:
+                # 无左子树的时候
+                node = node.right
         return result
