@@ -1,5 +1,6 @@
 import unittest
-from binary_tree_inorder_traversal import SolutionWithRecursion, TreeNode
+from binary_tree_inorder_traversal import SolutionWithRecursion, \
+    SolutionWithIteration, TreeNode
 
 
 class TestSolution(unittest.TestCase):
@@ -34,81 +35,82 @@ class TestSolution(unittest.TestCase):
 
     def test_inorder_traversal(self):
         s_recursion = SolutionWithRecursion()
+        s_iteration = SolutionWithIteration()
 
         array = [1, None, 2, 3]
         root = self.creat_binary_tree(array)
         self.assertEqual(
             s_recursion.inorderTraversal(root),
-            [1, 3, 2]
+            s_iteration.inorderTraversal(root)
         )
 
         array = []
         root = self.creat_binary_tree(array)
         self.assertEqual(
             s_recursion.inorderTraversal(root),
-            []
+            s_iteration.inorderTraversal(root)
         )
 
         array = [1, 2, 2, 3, 4, 4, 3]
         root = self.creat_binary_tree(array)
         self.assertEqual(
             s_recursion.inorderTraversal(root),
-            [3, 2, 4, 1, 4, 2, 3]
+            s_iteration.inorderTraversal(root)
         )
 
         array = [1, 2, 2, 3, 4, 4, 3, 5, 6, 6, 5, 7, 8, 8, 7]
         root = self.creat_binary_tree(array)
         self.assertEqual(
             s_recursion.inorderTraversal(root),
-            [5, 3, 6, 2, 6, 4, 5, 1, 7, 4, 8, 2, 8, 3, 7]
+            s_iteration.inorderTraversal(root)
         )
 
         array = [1, 2, 2, 3, 4, 4, 5]
         root = self.creat_binary_tree(array)
         self.assertEqual(
             s_recursion.inorderTraversal(root),
-            [3, 2, 4, 1, 4, 2, 5]
+            s_iteration.inorderTraversal(root)
         )
 
         array = [1, 2, 2, None, 3, 3]
         root = self.creat_binary_tree(array)
         self.assertEqual(
             s_recursion.inorderTraversal(root),
-            [2, 3, 1, 3, 2]
+            s_iteration.inorderTraversal(root)
         )
 
         array = [1, 2, 2, 3, None, None, 3]
         root = self.creat_binary_tree(array)
         self.assertEqual(
             s_recursion.inorderTraversal(root),
-            [3, 2, 1, 2, 3]
+            s_iteration.inorderTraversal(root)
         )
 
         array = [1, 2, 3, None, 3, None, 3]
         root = self.creat_binary_tree(array)
         self.assertEqual(
             s_recursion.inorderTraversal(root),
-            [2, 3, 1, 3, 3]
+            s_iteration.inorderTraversal(root)
         )
 
         array = [1, 2, 3, 3, None, 3]
         root = self.creat_binary_tree(array)
         self.assertEqual(
             s_recursion.inorderTraversal(root),
-            [3, 2, 1, 3, 3]
+            s_iteration.inorderTraversal(root)
         )
 
         array = [1, 2, 2, None, 3, 3, None, 4, None, None, 4]
         root = self.creat_binary_tree(array)
         self.assertEqual(
             s_recursion.inorderTraversal(root),
-            [2, 4, 3, 1, 3, 4, 2]
+            s_iteration.inorderTraversal(root)
         )
         array = [1, 2, 2, 3, None, None, 3, None, 4, 4]
         root = self.creat_binary_tree(array)
         self.assertEqual(
             s_recursion.inorderTraversal(root),
-            [3, 4, 2, 1, 2, 4, 3]
+            s_iteration.inorderTraversal(root)
         )
 
 
