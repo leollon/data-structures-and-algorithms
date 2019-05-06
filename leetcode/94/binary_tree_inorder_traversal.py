@@ -51,21 +51,20 @@ class SolutionWithIteration:
         """
         result = []
         node = root
-        mid_nodes = []
-        while node or mid_nodes:
+        subtrees_root = []
+        while node or subtrees_root:
             if node and node.left:
-                mid_nodes.append(node)
+                # 访问当前结点左结点，将该当前结点该左结点所在的子树的根结点，并将这个
+                # 根结点放入子树根列表中
+                subtrees_root.append(node)
                 node = node.left
                 continue
             if node:
-                # 已经到达该子树最左边的结点或着不存在左子树
+                # 已经到达该子树最左边的结点或不存在左子树
                 result.append(node.val)
-            if node and node.right:
-                node = node.right
-                continue
-            else:
-                if mid_nodes:
-                    node = mid_nodes.pop()
-                    result.append(node.val)
-            node = node.right
+            if not node and subtrees_root:
+                # 到达叶子结点之后，子树的根结点出栈，并取该根结点的值放入要返回的结果中
+                node = subtrees_root.pop()
+                result.append(node.val)
+            node = node.right  # 访问当前结点的右子树或叶子结点
         return result
