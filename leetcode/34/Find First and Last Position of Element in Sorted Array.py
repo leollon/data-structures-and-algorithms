@@ -24,7 +24,7 @@ class Solution1:
         :type nums: List[int]
         :type target: int
         :rtype: List[int]
-        
+
         Examples
 
             >>> nums, target = [5, 7, 7, 8, 8, 10], 8
@@ -62,27 +62,21 @@ class Solution1:
             [-1, -1]
         """
         low, height = 0, len(nums) - 1
-        found = False
-        while len(nums):
-            if len(nums) == 1 and nums[0] != target:
-                low = height = -1
-                break
+        while low <= height:
             mid = low + (height - low) // 2
             if nums[mid] > target:
-                    height = mid - 1
+                height = mid - 1
             elif nums[mid] < target:
-                    low = mid + 1
+                low = mid + 1
             else:
-                found = True
+                # 在数组中找到了与目标相等的值
+                if nums[low] == nums[height]:
+                    return [low, height]
                 if nums[low] != target:
                     low += 1
                 if nums[height] != target:
                     height -= 1
-            if found and nums[low] == nums[height] and nums[low] == target:
-                return [low, height]
-            if low > height: break
-        if not len(nums) or low == height or not found: low = height = -1
-        return [low, height]
+        return [-1, -1]
 
 
 class Solution2:
@@ -91,7 +85,7 @@ class Solution2:
         :type nums: List[int]
         :type target: int
         :rtype: List[int]
-        
+
         Examples
 
             >>> nums, target = [5, 7, 7, 8, 8, 10], 8
@@ -128,7 +122,8 @@ class Solution2:
             >>> Solution2().searchRange(nums, target)
             [-1, -1]
         """
-        if len(nums) == 0: return [-1, -1]
+        if len(nums) == 0:
+            return [-1, -1]
         count = nums.count(target)
         if count:
             if count == 1:
