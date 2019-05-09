@@ -1,6 +1,6 @@
 import unittest
 
-from symmetric_tree import Solution, TreeNode
+from symmetric_tree import SolutionWithRecursion, TreeNode
 
 
 class TestSolution(unittest.TestCase):
@@ -33,7 +33,7 @@ class TestSolution(unittest.TestCase):
 
     def test_is_symmetric(self):
 
-        s = Solution()
+        s = SolutionWithRecursion()
 
         array = [1, 2, 2, 3, 4, 4, 3]
         root = self.create_binary_tree(array)

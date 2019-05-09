@@ -107,7 +107,7 @@ Python3
 |103|111|Minimum Depth of Binary Tree|Py3|Easy|0.2434|
 |104|102|Binary Tree Level Order Traversal|Py3|Medium|0.7687|
 |105|199|Binary Tree Right Side View|Py3|Medium|0.9483|
-|106|101|Symmetric Tree|Py3|Easy|0.5876|
+|106|101|Symmetric Tree|Py3|Easy|0.9986|
 |107|144|Binary Tree Preorder Traversal|Py3|Medium|0.8372|
 |108|94|Binary Tree Inorder Traversal|Py3|Medium|0.8516|
 |109|145|Binary Tree Postorder Traversal|Py3|Hard|0.3837/0.8507|

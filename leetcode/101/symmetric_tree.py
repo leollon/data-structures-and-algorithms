@@ -30,28 +30,22 @@ class TreeNode:
         self.right = None
 
 
-class Solution:
+class SolutionWithRecursion:
     def isSymmetric(self, root: TreeNode) -> bool:
-        left = []
-        self._from_left(root, left)  # start from left subtree at first
-        right = []
-        self._from_right(root, right)  # start from right subtree at first
-        return left == right
+        if not root:
+            # not a tree
+            return True
+        return self._helper(root.left, root.right)
 
-    def _from_left(self, node, result):
-        if node:
-            result.append(node.val)
-        if not node:
-            result.append(node)
-            return
-        self._from_left(node.left, result)
-        self._from_left(node.right, result)
-
-    def _from_right(self, node, result):
-        if node:
-            result.append(node.val)
-        if not node:
-            result.append(node)
-            return
-        self._from_right(node.right, result)
-        self._from_right(node.left, result)
+    def _helper(self, left, right):
+        if not left and not right:
+            # reach the leaf node
+            return True
+        if not left and right:
+            # the height of left subtree is less than the right one
+            return False
+        elif left and not right:
+            # the height of left subtree is greater than the right one
+            return False
+        return left.val == right.val and self._helper(left.left, right.right) \
+            and self._helper(left.right, right.left)
