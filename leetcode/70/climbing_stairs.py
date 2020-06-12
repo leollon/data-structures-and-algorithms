@@ -56,23 +56,16 @@ class Solution:
             >>> s.climbStairs(n)
             13
 
-            # >>> n = 38
-            # >>> s.climbStairs(n)
-            # 63245986
+            >>> n = 38
+            >>> s.climbStairs(n)
+            63245986
         """
-        method = [0]
-        self.walk(n, method)
-        return method[0]
-    
-    def walk(self, n, method):
-        if 0 == n:
-            method[0] += 1
-            return
-        elif n < 0:
-            return
-        else:
-            self.walk(n - 1, method)
-            self.walk(n - 2, method)
+        a, b = 1, 1
+        while n - 1 > 0:
+            a = a + b
+            a, b = b, a
+            n -= 1
+        return b
 
 
 if __name__ == "__main__":
