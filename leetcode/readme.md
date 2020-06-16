@@ -115,3 +115,4 @@ Python3
 |111|70|Climbing Stairs|Py3|Easy|0.9817|
 |112|226|Invert Binary Tree|Py3|Easy|0.4499|
 |113|700|Search in a Binary Search Tree|Py3|Easy|0.9207|
+|114|1008|Construct Binary Tree from Preorder Traversal|Py3|Medium|0.3267|
