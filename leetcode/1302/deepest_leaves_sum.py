@@ -25,31 +25,38 @@ class TreeNode:
 
 
 class Solution:
-    def deepestLeavesSum(self, root: TreeNode) -> int:
-        leaves = [0]
-        max_depth = [0]
-        self._compute_max_depth(root, max_depth, 0)
-        self._helper(root, max_depth[0], 0, leaves)
-        return sum(leaves)
 
-    def _compute_max_depth(self, root: TreeNode, max_depth: List[int], curr_depth: int):
+    def deepestLeavesSum(self, root: TreeNode) -> int:
+
+        # index 0 store max depth, index 1 stores the sum of the deepest leaves
+        results = [0, 0]
+        self._compute_max_depth(root, results, 0)
+        self._helper(root, 0, results)
+        return results[1]
+
+    def _compute_max_depth(self, root: TreeNode, results: List[int], curr_depth: int):
         if not root:
             return
         if not root.right and not root.left:
-            if curr_depth > max_depth[0]:
-                max_depth[0] = curr_depth
+            if curr_depth > results[0]:
+                results[0] = curr_depth
             return
-        self._compute_max_depth(root.left, max_depth, curr_depth + 1)
-        self._compute_max_depth(root.right, max_depth, curr_depth + 1)
+        self._compute_max_depth(root.left, results, curr_depth + 1)
+        self._compute_max_depth(root.right, results, curr_depth + 1)
 
-    def _helper(self, root: TreeNode, max_depth: int, curr_depth: int, leaves: List[int]):
+    def _helper(self, root: TreeNode, curr_depth: int, results: List[int]):
         if not root:
             return
-        self._helper(root.left, max_depth, curr_depth + 1, leaves)
-        self._helper(root.right, max_depth, curr_depth + 1, leaves)
+        if not root.right and not root.left:
+            if curr_depth > results[0]:
+                # compare curr_depth with max_depth
+                results[0] = curr_depth
+        self._helper(root.left, curr_depth + 1, results)
+        self._helper(root.right, curr_depth + 1, results)
 
-        if curr_depth >= max_depth:
-            leaves.append(root.val)
+        if curr_depth == results[0]:
+            # curr_depth is equivalent to max_depth
+            results[1] += root.val
 
 
 class TestSolution(unittest.TestCase):
