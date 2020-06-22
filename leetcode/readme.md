@@ -118,4 +118,5 @@ Python3
 |114|1008|Construct Binary Tree from Preorder Traversal|Py3|Medium|0.3267|
 |115|1302|Deepest Leaves Sum|Py3|Medium|0.3548|
 |116|121|Best Time to Buy and Sell Stock|Py3|Easy|0.8774|
+|117|122|Best Time to Buy and Sell Stock II|Py3|Easy|0.8185|
 
