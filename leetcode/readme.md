@@ -120,4 +120,5 @@ Python3
 |116|121|Best Time to Buy and Sell Stock|Py3|Easy|0.8774|
 |117|122|Best Time to Buy and Sell Stock II|Py3|Easy|0.8185|
 |118|222|Count Complete Tree Nodes|Py3|Medium|0.5040|
+|119|100|Same Tree|Py3|Easy|0.9222|
 
