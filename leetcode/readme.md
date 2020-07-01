@@ -123,4 +123,5 @@ Python3
 |119|100|Same Tree|Py3|Easy|0.9222|
 |120|71|Simplify Path|Py3|Medium|0.4684|
 |121|394|Decode String|Py3|Medium|0.1849|
+|122|110|Balanced Binary Tree|Py3|Easy|0.0524|
 
