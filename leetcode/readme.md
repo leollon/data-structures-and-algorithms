@@ -124,4 +124,5 @@ Python3
 |120|71|Simplify Path|Py3|Medium|0.4684|
 |121|394|Decode String|Py3|Medium|0.1849|
 |122|110|Balanced Binary Tree|Py3|Easy|0.0524|
+|123|897|Increasing Order Search Tree|Py3|Easy|0.8590|
 
