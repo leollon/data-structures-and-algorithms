@@ -126,4 +126,5 @@ Python3
 |122|110|Balanced Binary Tree|Py3|Easy|0.0524|
 |123|897|Increasing Order Search Tree|Py3|Easy|0.8590|
 |124|98|Validate Binary Search Tree|Py3|Medium|0.0781(1st ac)|
+|125|1464|Maximum Product of Two Elements in an Array|Py3|Easy|0.3322(1st ac)|
 
