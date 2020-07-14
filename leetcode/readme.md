@@ -128,5 +128,6 @@ Python3
 |124|98|Validate Binary Search Tree|Py3|Medium|0.0781(1st AC)|
 |125|1464|Maximum Product of Two Elements in an Array|Py3|Easy|0.3322(1st AC)|
 |126|193|Valid Phone Numbers|Py3|Easy|(Permission Denied)|
-|125|114|Flatten Binary Tree to Linked List|Py3|Medium|0.9834(1st AC)|
+|127|114|Flatten Binary Tree to Linked List|Py3|Medium|0.9834(1st AC)|
+|128|701|Insert into a Binary Search Tree|Py3|Medium|0.2144(1st AC)|
 
