@@ -133,4 +133,5 @@ Python3
 |129|1344|Angle Between Hands of a Clock|Py3|Medium|0.2136(1st AC)|
 |130|1512|Number of Good Pairs|Py3|Easy|1(1st AC)|
 |131|654|Maximum Binary Tree|Py3|Medium|0.1941(1st AC)|
+|132|1513|Number of Substring With Only 1s|Py3|Medium|0.5549(1st AC)|
 
