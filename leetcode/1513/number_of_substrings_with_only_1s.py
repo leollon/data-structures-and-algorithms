@@ -64,29 +64,41 @@ class Solution:
         return sum(result) % (10 ** 9 + 7)
 
 
+class FasterSolution:
+    def numSub(self, s: str) -> int:
+        result = 0
+        ones = s.split('0')  # one 1s substring and '' in the list
+
+        for ss in ones:
+            l = len(ss)
+            result += l * (l + 1) // 2
+        return result % (10 ** 9 + 7)
+
+
 class TestSolution(unittest.TestCase):
     def setUp(self):
-        self.solution = Solution()
+        self.s_solution = Solution()
+        self.f_solution = FasterSolution()
 
     def test_numSub(self):
 
         s = "0110111"
-        self.assertEqual(9, self.solution.numSub(s))
+        self.assertEqual(self.f_solution.numSub(s), self.s_solution.numSub(s))
 
         s = "11111111111"
-        self.assertEqual(66, self.solution.numSub(s))
+        self.assertEqual(self.f_solution.numSub(s), self.s_solution.numSub(s))
 
         s = "00000000000000"
-        self.assertEqual(0, self.solution.numSub(s))
+        self.assertEqual(self.f_solution.numSub(s), self.s_solution.numSub(s))
 
         s = "1000000000000000"
-        self.assertEqual(1, self.solution.numSub(s))
+        self.assertEqual(self.f_solution.numSub(s), self.s_solution.numSub(s))
 
         s = "0101010101010101"
-        self.assertEqual(8, self.solution.numSub(s))
+        self.assertEqual(self.f_solution.numSub(s), self.s_solution.numSub(s))
 
         s = "111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
-        self.assertEqual(171405, self.solution.numSub(s))
+        self.assertEqual(self.f_solution.numSub(s), self.s_solution.numSub(s))
 
 
 if __name__ == "__main__":
